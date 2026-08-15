@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: es
+
+website:
+  title: "David González Martínez"
+  description: "Portafolio profesional de análisis de datos, Business Intelligence y estadística aplicada."
+  favicon: assets/img/favicon.svg
+  navbar:
+    pinned: true
+    background: "#0b2d55"
+    foreground: light
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: proyectos/index.qmd
+        text: Proyectos
+      - href: blog/index.qmd
+        text: Blog
+      - href: sobre-mi/index.qmd
+        text: Sobre mí
+    right:
+      - icon: github
+        aria-label: GitHub
+        href: "https://github.com/DavidGMtz"
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: "https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272"
+  page-footer:
+    left: "© 2026 David González Martínez"
+    right: "Análisis de datos · Business Intelligence · Estadística"
+  open-graph: true
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true

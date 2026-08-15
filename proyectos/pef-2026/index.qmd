@@ -1,0 +1,39 @@
+---
+title: "Presupuesto de Egresos de la Federación 2026"
+description: "Dashboard ejecutivo para analizar la distribución, administración y avance del gasto público."
+date: 2026-01-01
+date-format: "YYYY"
+categories: [Power BI, DAX, Power Query, Datos públicos]
+image: ../../assets/img/pef-2026.svg
+page-layout: article
+toc: true
+---
+
+## Descripción del proyecto
+
+Reporte de Business Intelligence diseñado para analizar la concentración, el destino, la administración y la ejecución del gasto. Permite comparar entidades, identificar a los principales responsables y detectar diferencias en el avance presupuestario.
+
+## Reporte interactivo
+
+<div class="powerbi-wrapper">
+  <iframe
+    title="Dashboard PEF 2026"
+    src="https://app.powerbi.com/view?r=eyJrIjoiM2I0ODQ1MTctM2M2MS00MDFjLWFjYTUtODQ0YzY0ODVjZjkzIiwidCI6IjVmMjgyOTEwLTE3NmYtNDU5ZC1hYjdkLWI3NDRhYTZlZmMwNyIsImMiOjR9&pageName=9396be8a6b08d1a6c0f3"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
+
+[Abrir el reporte en una pestaña independiente](https://davidgmtz.github.io/proyectoBI_PEF/){.btn .btn-outline-primary}
+
+## Preguntas que responde
+
+- **¿Dónde se concentra el gasto?** Compara la distribución territorial del presupuesto.
+- **¿En qué se gasta?** Identifica los grupos funcionales, funciones y subfunciones con mayor asignación.
+- **¿Quién administra los recursos?** Muestra los ramos y unidades responsables con mayor participación.
+- **¿Cómo se financia?** Presenta la composición del monto aprobado por fuente de financiamiento.
+- **¿Dónde existe mayor rezago?** Facilita la detección de entidades y funciones con menor avance presupuestario.
+
+## Herramientas
+
+Power BI, Power Query, DAX y datos públicos del Presupuesto de Egresos de la Federación.

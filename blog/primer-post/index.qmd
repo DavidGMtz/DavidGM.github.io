@@ -1,0 +1,20 @@
+---
+title: "Cómo presentar un proyecto de datos en un portafolio"
+description: "Una estructura sencilla para explicar el problema, el proceso y el valor de un análisis."
+date: 2026-08-14
+categories: [Portafolio, Comunicación, Datos]
+page-layout: article
+toc: true
+---
+
+Un buen proyecto de portafolio no comienza con la herramienta utilizada. Comienza con una pregunta clara y termina explicando qué decisión puede mejorar gracias al análisis.
+
+## Una estructura útil
+
+1. **Contexto:** explica por qué existe el problema.
+2. **Pregunta:** define qué necesitas descubrir o medir.
+3. **Proceso:** resume cómo preparaste y analizaste los datos.
+4. **Resultado:** presenta los hallazgos más importantes.
+5. **Valor:** explica qué decisión puede tomar el lector.
+
+Esta estructura permite que una persona no técnica entienda el proyecto sin perder la posibilidad de revisar el código, el tablero o la metodología.

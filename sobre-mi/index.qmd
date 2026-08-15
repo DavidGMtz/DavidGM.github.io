@@ -1,0 +1,28 @@
+---
+title: "Sobre mí"
+description: "Perfil profesional de David González Martínez."
+page-layout: article
+toc: true
+---
+
+## David González Martínez
+
+Soy matemático con formación de posgrado en Estadística y Probabilidad, orientado al análisis de datos y Business Intelligence. Mi perfil combina razonamiento cuantitativo, preparación de información y comunicación de resultados para apoyar decisiones.
+
+He trabajado con procesos de validación, homologación y análisis de datos, así como con indicadores y reportes en contextos administrativos y de negocio.
+
+## Lo que aporto
+
+- Capacidad para estructurar problemas ambiguos y convertirlos en preguntas medibles.
+- Criterio estadístico para seleccionar métricas e interpretar resultados.
+- Atención a la calidad, consistencia y trazabilidad de los datos.
+- Comunicación clara para públicos técnicos y no técnicos.
+
+## Herramientas
+
+Power BI, SQL, Python, Power Query, DAX, análisis estadístico y visualización de datos.
+
+## Contacto profesional
+
+[LinkedIn](https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272){.btn .btn-primary}
+[GitHub](https://github.com/DavidGMtz){.btn .btn-outline-primary}

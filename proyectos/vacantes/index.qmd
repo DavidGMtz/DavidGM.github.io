@@ -1,0 +1,33 @@
+---
+title: "Analítica de cobertura y vacantes"
+description: "Caso de Business Intelligence para medir cobertura, vacancia y posiciones prioritarias."
+date: 2025-12-01
+date-format: "YYYY"
+categories: [Looker Studio, Capital humano, Indicadores]
+image: ../../assets/img/vacantes.svg
+page-layout: article
+toc: true
+---
+
+## Problema
+
+Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias.
+
+## Preguntas que responde
+
+- ¿Cuál es el nivel general de cobertura?
+- ¿En qué áreas se concentran las vacantes?
+- ¿Cómo se compone la fuerza laboral?
+- ¿Qué posiciones deberían atenderse primero?
+
+## Solución desarrollada
+
+Se construyó un reporte analítico con indicadores de cobertura, vacantes y composición de plantilla; filtros por ubicación, contrato y área; y vistas de detalle para revisar posiciones cubiertas y pendientes.
+
+## Resultado
+
+La solución ofrece una vista ejecutiva de la plantilla y permite pasar del panorama general al detalle de las posiciones, evitando interpretar todas las vacantes con la misma prioridad.
+
+::: {.callout-note}
+Cuando tengas la captura y el enlace público definitivos, colócalos en esta página para que el proyecto quede completo.
+:::

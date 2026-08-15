@@ -1,0 +1,40 @@
+---
+pagetitle: "David González Martínez | Analista de Datos y BI"
+page-layout: full
+---
+
+<section class="portada">
+
+<div class="presentacion">
+
+<p class="etiqueta">ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE</p>
+
+<h1>David González Martínez</h1>
+
+<h2>Analista de Datos con formación matemática y con especialización estadística</h2>
+
+<p class="descripcion">
+Transformo datos complejos en indicadores, análisis y reportes claros
+para apoyar decisiones de negocio.
+</p>
+
+<div class="botones">
+<a class="boton principal" href="proyectos.html">Ver proyectos</a>
+<a class="boton secundario" href="about.html">Conocer mi perfil</a>
+</div>
+
+</div>
+
+<div class="visual-portada">
+
+<div class="grafico">
+<div class="barra barra-1"></div>
+<div class="barra barra-2"></div>
+<div class="barra barra-3"></div>
+<div class="barra barra-4"></div>
+<div class="barra barra-5"></div>
+</div>
+
+</div>
+
+</section> 

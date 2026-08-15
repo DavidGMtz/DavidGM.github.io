@@ -1,0 +1,16 @@
+---
+title: "Proyectos"
+description: "Casos de análisis de datos, Business Intelligence y estadística aplicada."
+page-layout: full
+listing:
+  contents: "."
+  type: grid
+  sort: "date desc"
+  fields: [image, title, description, categories, date]
+  grid-columns: 3
+  image-height: 220px
+  page-size: 12
+  feed: false
+---
+
+Cada proyecto presenta el problema, las preguntas que guiaron el análisis, las herramientas utilizadas y los resultados obtenidos. Selecciona una tarjeta para abrir el caso completo.

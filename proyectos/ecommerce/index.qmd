@@ -1,0 +1,50 @@
+---
+title: "Análisis comercial E-commerce"
+description: "Caso de SQL y Python para estudiar ventas, clientes y desempeño de productos."
+date: 2025-11-01
+date-format: "YYYY"
+categories: [SQL, Python, E-commerce]
+image: ../../assets/img/ecommerce.svg
+page-layout: article
+toc: true
+---
+
+## Objetivo
+
+Analizar el comportamiento comercial de una tienda en línea para identificar tendencias de ventas, clientes recurrentes y productos con mayor aportación a los ingresos.
+
+## Preguntas del análisis
+
+- ¿Cómo evolucionan los ingresos por mes?
+- ¿Qué productos concentran las ventas?
+- ¿Cuántos clientes vuelven a comprar?
+- ¿Qué segmentos ofrecen mejores oportunidades?
+
+## Ejemplo de código SQL
+
+El portafolio también puede mostrar código con formato, numeración y un botón para copiarlo.
+
+```sql
+SELECT
+    DATE_TRUNC('month', fecha_venta) AS mes,
+    SUM(importe) AS ingresos,
+    COUNT(DISTINCT cliente_id) AS clientes
+FROM ventas
+GROUP BY 1
+ORDER BY 1;
+```
+
+## Ejemplo de código Python
+
+```python
+ventas_mensuales = (
+    ventas
+    .groupby("mes", as_index=False)
+    .agg(ingresos=("importe", "sum"),
+         clientes=("cliente_id", "nunique"))
+)
+```
+
+::: {.callout-tip}
+Sustituye estos ejemplos por el código, las gráficas y las conclusiones reales del proyecto cuando termines el análisis.
+:::
