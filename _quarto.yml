@@ -5,7 +5,7 @@ lang: es
 
 website:
   title: "David González Martínez"
-  site-url: "https://davidgmtz.github.io/DavidGM/"
+  site-url: "https://davidgmtz.github.io/DavidGM.github.io/"
 
   navbar:
     background: "#0b2d55"
@@ -17,7 +17,7 @@ website:
       - href: proyectos.qmd
         text: Proyectos
 
-      - href: about.qmd
+      - href: sobre-mi\index.qmd
         text: Sobre mí
 
     right:
