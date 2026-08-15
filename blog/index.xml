@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>David González Martínez</title>
+<link>https://davidgmtz.github.io/DavidGM/blog/</link>
+<atom:link href="https://davidgmtz.github.io/DavidGM/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>Notas breves sobre análisis de datos, visualización y aprendizaje profesional.</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Fri, 14 Aug 2026 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Cómo presentar un proyecto de datos en un portafolio</title>
+  <link>https://davidgmtz.github.io/DavidGM/blog/primer-post/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Un buen proyecto de portafolio no comienza con la herramienta utilizada. Comienza con una pregunta clara y termina explicando qué decisión puede mejorar gracias al análisis.</p>
+<section id="una-estructura-útil" class="level2">
+<h2 class="anchored" data-anchor-id="una-estructura-útil">Una estructura útil</h2>
+<ol type="1">
+<li><strong>Contexto:</strong> explica por qué existe el problema.</li>
+<li><strong>Pregunta:</strong> define qué necesitas descubrir o medir.</li>
+<li><strong>Proceso:</strong> resume cómo preparaste y analizaste los datos.</li>
+<li><strong>Resultado:</strong> presenta los hallazgos más importantes.</li>
+<li><strong>Valor:</strong> explica qué decisión puede tomar el lector.</li>
+</ol>
+<p>Esta estructura permite que una persona no técnica entienda el proyecto sin perder la posibilidad de revisar el código, el tablero o la metodología.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Portafolio</category>
+  <category>Comunicación</category>
+  <category>Datos</category>
+  <guid>https://davidgmtz.github.io/DavidGM/blog/primer-post/</guid>
+  <pubDate>Fri, 14 Aug 2026 06:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

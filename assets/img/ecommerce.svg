@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Proyecto de análisis E-commerce</title>
+  <desc id="desc">Representación visual de datos comerciales y código</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf2fb"/>
+      <stop offset="1" stop-color="#bfd5eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="85" y="115" fill="#2867c7" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="3">SQL · PYTHON · ANALÍTICA COMERCIAL</text>
+  <text x="85" y="180" fill="#0b2d55" font-family="Arial, sans-serif" font-size="50" font-weight="700">E-commerce</text>
+  <g transform="translate(85 235)">
+    <rect width="1030" height="350" rx="18" fill="#fff" fill-opacity=".7" stroke="#9fb8d0"/>
+    <polyline points="55,270 190,220 325,240 460,150 595,180 730,90 890,125 975,65" fill="none" stroke="#2867c7" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#0b2d55">
+      <circle cx="55" cy="270" r="12"/><circle cx="190" cy="220" r="12"/><circle cx="325" cy="240" r="12"/><circle cx="460" cy="150" r="12"/><circle cx="595" cy="180" r="12"/><circle cx="730" cy="90" r="12"/><circle cx="890" cy="125" r="12"/><circle cx="975" cy="65" r="12"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/proyectos/index.html",
+    "items": [
+      "/proyectos/pef-2026/index.html",
+      "/proyectos/vacantes/index.html",
+      "/proyectos/ecommerce/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/primer-post/index.html"
+    ]
+  }
+]
