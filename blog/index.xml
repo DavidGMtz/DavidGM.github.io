@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>David González Martínez</title>
-<link>https://davidgmtz.github.io/DavidGM/blog/</link>
-<atom:link href="https://davidgmtz.github.io/DavidGM/blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://davidgmtz.github.io/DavidGM.github.io/blog/</link>
+<atom:link href="https://davidgmtz.github.io/DavidGM.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Notas breves sobre análisis de datos, visualización y aprendizaje profesional.</description>
 <generator>quarto-1.10.18</generator>
 <lastBuildDate>Fri, 14 Aug 2026 06:00:00 GMT</lastBuildDate>
 <item>
   <title>Cómo presentar un proyecto de datos en un portafolio</title>
-  <link>https://davidgmtz.github.io/DavidGM/blog/primer-post/</link>
+  <link>https://davidgmtz.github.io/DavidGM.github.io/blog/primer-post/</link>
   <description><![CDATA[ 
 
 
@@ -38,7 +38,7 @@
   <category>Portafolio</category>
   <category>Comunicación</category>
   <category>Datos</category>
-  <guid>https://davidgmtz.github.io/DavidGM/blog/primer-post/</guid>
+  <guid>https://davidgmtz.github.io/DavidGM.github.io/blog/primer-post/</guid>
   <pubDate>Fri, 14 Aug 2026 06:00:00 GMT</pubDate>
 </item>
 </channel>
