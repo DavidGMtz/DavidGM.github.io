@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustración de analítica y Business Intelligence</title>
+  <desc id="desc">Pantalla con gráficas, indicadores y una lupa</desc>
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#eaf2fb"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#123f73"/><stop offset="1" stop-color="#2d75d2"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0b2d55" flood-opacity=".16"/></filter>
+  </defs>
+  <path d="M116 327C44 241 132 88 281 73c147-15 206-58 316 12 108 69 105 216 4 278-94 59-407 49-485-36z" fill="#f0f5fb"/>
+  <g fill="#bed4ec" opacity=".75"><circle cx="621" cy="72" r="5"/><circle cx="645" cy="72" r="5"/><circle cx="669" cy="72" r="5"/><circle cx="621" cy="96" r="5"/><circle cx="645" cy="96" r="5"/><circle cx="669" cy="96" r="5"/><circle cx="621" cy="120" r="5"/><circle cx="645" cy="120" r="5"/><circle cx="669" cy="120" r="5"/><circle cx="95" cy="144" r="7"/><circle cx="697" cy="292" r="8"/></g>
+  <g transform="translate(95 43)" filter="url(#shadow)">
+    <rect width="175" height="108" rx="13" fill="#fff" stroke="#d7e4f1"/>
+    <rect x="29" y="61" width="15" height="25" rx="2" fill="#1a568f"/><rect x="55" y="45" width="15" height="41" rx="2" fill="#2a6fba"/><rect x="81" y="27" width="15" height="59" rx="2" fill="#438bd8"/><rect x="107" y="14" width="15" height="72" rx="2" fill="#88b8e8"/><rect x="133" y="51" width="15" height="35" rx="2" fill="#c3daf0"/>
+  </g>
+  <g transform="translate(225 99)" filter="url(#shadow)">
+    <rect width="425" height="269" rx="18" fill="#14375f"/><rect x="11" y="11" width="403" height="239" rx="10" fill="url(#screen)"/>
+    <rect x="30" y="31" width="240" height="101" rx="8" fill="#fff" stroke="#dae6f2"/>
+    <path d="M51 100l42-28 46 15 50-38 56 19" fill="none" stroke="#2771c8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#2771c8"><circle cx="51" cy="100" r="5"/><circle cx="93" cy="72" r="5"/><circle cx="139" cy="87" r="5"/><circle cx="189" cy="49" r="5"/><circle cx="245" cy="68" r="5"/></g>
+    <g transform="translate(286 31)"><rect width="99" height="101" rx="8" fill="#fff" stroke="#dae6f2"/><circle cx="49" cy="51" r="29" fill="none" stroke="#d5e5f4" stroke-width="15"/><circle cx="49" cy="51" r="29" fill="none" stroke="#236bb8" stroke-width="15" stroke-dasharray="120 63" transform="rotate(-90 49 51)"/></g>
+    <g transform="translate(30 150)"><rect width="116" height="75" rx="8" fill="#fff" stroke="#dae6f2"/><rect x="17" y="20" width="67" height="7" rx="3.5" fill="#bfd0e1"/><rect x="17" y="37" width="84" height="7" rx="3.5" fill="#d7e3ee"/><rect x="17" y="54" width="50" height="7" rx="3.5" fill="#d7e3ee"/></g>
+    <g transform="translate(160 150)"><rect width="118" height="75" rx="8" fill="#fff" stroke="#dae6f2"/><rect x="18" y="47" width="13" height="14" rx="2" fill="#b7d2ec"/><rect x="39" y="35" width="13" height="26" rx="2" fill="#78ace0"/><rect x="60" y="20" width="13" height="41" rx="2" fill="#2771c8"/><rect x="81" y="29" width="13" height="32" rx="2" fill="#154b80"/></g>
+    <g transform="translate(292 150)"><rect width="93" height="75" rx="8" fill="#fff" stroke="#dae6f2"/><path d="M15 52c12-3 11-24 24-20 10 3 9 17 20 10 7-4 7-17 18-18" fill="none" stroke="#9cbfe1" stroke-width="6" stroke-linecap="round"/></g>
+    <path d="M-35 274h495l-27 19H-9z" fill="#0c2a4a"/>
+  </g>
+  <g transform="translate(143 213) rotate(-8)" filter="url(#shadow)"><circle cx="0" cy="0" r="55" fill="#fff" fill-opacity=".75" stroke="url(#blue)" stroke-width="12"/><path d="M39 40l58 65" stroke="#123f73" stroke-width="18" stroke-linecap="round"/></g>
+  <g transform="translate(650 296)"><path d="M0 35c-30-25-27-61-6-70 12 22 15 47 6 70zm5-4c3-31 24-51 45-47 0 25-18 47-45 47zm-1 8c-21-9-36-27-30-44 20 2 34 20 30 44z" fill="#79a7ce"/><path d="M4-26v70" stroke="#356b9d" stroke-width="4"/><path d="M-28 41h65l-8 48h-48z" fill="#184d7d"/></g>
+  <path d="M64 401h648" stroke="#b8cde2" stroke-width="3" stroke-linecap="round"/>
+</svg>

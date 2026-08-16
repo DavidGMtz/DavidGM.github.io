@@ -1,40 +1,188 @@
 ---
-pagetitle: "David González Martínez | Analista de Datos y BI"
+description: "Portafolio de proyectos de análisis de datos, Business Intelligence y estadística aplicada de David González Martínez."
 page-layout: full
+toc: false
 ---
 
-<section class="portada">
+<div class="portfolio-page">
 
-<div class="presentacion">
+<section id="inicio" class="landing-hero">
+  <div class="site-shell landing-hero__grid">
+    <div class="landing-hero__copy">
+      <p class="eyebrow">ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE</p>
+      <h1>Hola, soy<br><strong>David González.</strong></h1>
+      <p class="landing-hero__role">Analista de Datos, BI y Estadística</p>
+      <p class="landing-hero__description">
+        Desarrollo proyectos que transforman datos complejos en indicadores,
+        visualizaciones y conclusiones útiles para tomar decisiones.
+      </p>
 
-<p class="etiqueta">ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE</p>
+      <div class="landing-hero__actions">
+        <a class="button-dark" href="#portafolio">
+          Ver proyectos <i class="bi bi-arrow-down" aria-hidden="true"></i>
+        </a>
+        <a class="button-text" href="https://github.com/DavidGMtz">
+          GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
 
-<h1>David González Martínez</h1>
+      <div class="landing-hero__social" aria-label="Perfiles profesionales">
+        <a href="https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/DavidGMtz" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+      </div>
+    </div>
 
-<h2>Analista de Datos con formación matemática y con especialización estadística</h2>
+    <div class="landing-hero__visual">
+      <img src="assets/img/hero-analytics.svg" alt="Ilustración de un tablero de análisis de datos en una computadora" />
+    </div>
+  </div>
+</section>
 
-<p class="descripcion">
-Transformo datos complejos en indicadores, análisis y reportes claros
-para apoyar decisiones de negocio.
-</p>
+<section class="positioning-section">
+  <div class="site-shell positioning-grid">
+    <p class="section-index">01 — ENFOQUE</p>
+    <div>
+      <h2>Del dato a una decisión comprensible.</h2>
+      <p>
+        Cada caso muestra el problema, el proceso analítico, las herramientas utilizadas
+        y la forma en que los resultados se convierten en información accionable.
+      </p>
+    </div>
+  </div>
+</section>
 
-<div class="botones">
-<a class="boton principal" href="proyectos.html">Ver proyectos</a>
-<a class="boton secundario" href="about.html">Conocer mi perfil</a>
+<section id="portafolio" class="portfolio-section">
+  <div class="site-shell">
+    <div class="portfolio-heading">
+      <div>
+        <p class="section-index">02 — TRABAJO SELECCIONADO</p>
+        <h2>Portafolio</h2>
+      </div>
+      <p>Proyectos de Business Intelligence, análisis estadístico y visualización de datos.</p>
+    </div>
+
+    <article id="pef" class="project-showcase project-showcase--text-first">
+      <div class="project-showcase__copy">
+        <p class="project-number">PROYECTO 01 · POWER BI</p>
+        <h3>Presupuesto de Egresos de la Federación 2026</h3>
+        <p class="project-lead">
+          Dashboard ejecutivo para explorar la concentración, distribución y seguimiento
+          del gasto público en México.
+        </p>
+
+        <dl class="project-details">
+          <div><dt>Pregunta</dt><dd>¿Dónde se concentra el presupuesto y quién administra los recursos?</dd></div>
+          <div><dt>Solución</dt><dd>Indicadores, comparativos territoriales y navegación ejecutiva.</dd></div>
+          <div><dt>Herramientas</dt><dd>Power BI · Power Query · DAX</dd></div>
+        </dl>
+
+        <a class="button-dark" href="proyectos/pef-2026/">
+          Consultar proyecto <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="project-showcase__media project-showcase__media--dark">
+        <img src="assets/img/pef-2026.svg" alt="Vista provisional del dashboard PEF 2026" />
+      </div>
+    </article>
+
+    <article id="vacantes" class="project-showcase project-showcase--media-first">
+      <div class="project-showcase__media">
+        <img src="assets/img/vacantes.svg" alt="Vista provisional del dashboard de cobertura y vacantes" />
+      </div>
+
+      <div class="project-showcase__copy">
+        <p class="project-number">PROYECTO 02 · LOOKER STUDIO</p>
+        <h3>Analítica de cobertura y vacantes</h3>
+        <p class="project-lead">
+          Reporte para medir la cobertura de plantilla, localizar la concentración de
+          vacantes y priorizar posiciones que requieren atención.
+        </p>
+
+        <dl class="project-details">
+          <div><dt>Pregunta</dt><dd>¿Qué áreas presentan mayor vacancia y riesgo operativo?</dd></div>
+          <div><dt>Solución</dt><dd>Indicadores, filtros y vistas de detalle por posición.</dd></div>
+          <div><dt>Herramientas</dt><dd>Looker Studio · Google Sheets · Campos calculados</dd></div>
+        </dl>
+
+        <a class="button-dark" href="proyectos/vacantes/">
+          Consultar proyecto <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </article>
+
+    <article id="ecommerce" class="project-showcase project-showcase--text-first">
+      <div class="project-showcase__copy">
+        <p class="project-number">PROYECTO 03 · SQL Y PYTHON</p>
+        <h3>Análisis comercial E-commerce</h3>
+        <p class="project-lead">
+          Caso analítico para estudiar ingresos, clientes recurrentes y desempeño de
+          productos con un enfoque comercial.
+        </p>
+
+        <dl class="project-details">
+          <div><dt>Pregunta</dt><dd>¿Qué productos, clientes y periodos explican los ingresos?</dd></div>
+          <div><dt>Solución</dt><dd>Consultas, segmentación, tendencias y visualizaciones.</dd></div>
+          <div><dt>Herramientas</dt><dd>SQL · Python · pandas</dd></div>
+        </dl>
+
+        <a class="button-dark" href="proyectos/ecommerce/">
+          Consultar proyecto <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="project-showcase__media">
+        <img src="assets/img/ecommerce.svg" alt="Vista provisional del proyecto de análisis E-commerce" />
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="herramientas" class="capabilities-section">
+  <div class="site-shell">
+    <div class="section-heading-row">
+      <p class="section-index">03 — CAPACIDADES DEMOSTRADAS</p>
+      <h2>Herramientas aplicadas en los proyectos</h2>
+    </div>
+
+    <div class="capabilities-grid">
+      <div class="capability">
+        <span>01</span>
+        <h3>Preparación</h3>
+        <p>SQL, Power Query, Excel y validación de calidad.</p>
+      </div>
+      <div class="capability">
+        <span>02</span>
+        <h3>Análisis</h3>
+        <p>Python, pandas, DAX y estadística aplicada.</p>
+      </div>
+      <div class="capability">
+        <span>03</span>
+        <h3>Comunicación</h3>
+        <p>Power BI, Looker Studio y storytelling con datos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact-section">
+  <div class="site-shell contact-grid">
+    <div>
+      <p class="section-index">04 — CONTACTO</p>
+      <h2>¿Hablamos de datos?</h2>
+    </div>
+    <div class="contact-copy">
+      <p>
+        Puedes consultar mi código, conocer mi perfil profesional o descargar mi CV.
+        Los enlaces definitivos se incorporarán en la siguiente revisión.
+      </p>
+      <div class="contact-links">
+        <a class="button-dark" href="https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272">LinkedIn</a>
+        <a class="button-outline" href="https://github.com/DavidGMtz">GitHub</a>
+        <span class="button-outline button-disabled" aria-disabled="true">Descargar CV</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
-
-</div>
-
-<div class="visual-portada">
-
-<div class="grafico">
-<div class="barra barra-1"></div>
-<div class="barra barra-2"></div>
-<div class="barra barra-3"></div>
-<div class="barra barra-4"></div>
-<div class="barra barra-5"></div>
-</div>
-
-</div>
-
-</section> 
