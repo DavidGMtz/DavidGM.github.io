@@ -1,110 +1,5 @@
 [
   {
-    "objectID": "sobre-mi/index.html",
-    "href": "sobre-mi/index.html",
-    "title": "Sobre mí",
-    "section": "",
-    "text": "Soy matemático con formación de posgrado en Estadística y Probabilidad, orientado al análisis de datos y Business Intelligence. Mi perfil combina razonamiento cuantitativo, preparación de información y comunicación de resultados para apoyar decisiones.\nHe trabajado con procesos de validación, homologación y análisis de datos, así como con indicadores y reportes en contextos administrativos y de negocio."
-  },
-  {
-    "objectID": "sobre-mi/index.html#david-gonzález-martínez",
-    "href": "sobre-mi/index.html#david-gonzález-martínez",
-    "title": "Sobre mí",
-    "section": "",
-    "text": "Soy matemático con formación de posgrado en Estadística y Probabilidad, orientado al análisis de datos y Business Intelligence. Mi perfil combina razonamiento cuantitativo, preparación de información y comunicación de resultados para apoyar decisiones.\nHe trabajado con procesos de validación, homologación y análisis de datos, así como con indicadores y reportes en contextos administrativos y de negocio."
-  },
-  {
-    "objectID": "sobre-mi/index.html#lo-que-aporto",
-    "href": "sobre-mi/index.html#lo-que-aporto",
-    "title": "Sobre mí",
-    "section": "Lo que aporto",
-    "text": "Lo que aporto\n\nCapacidad para estructurar problemas ambiguos y convertirlos en preguntas medibles.\nCriterio estadístico para seleccionar métricas e interpretar resultados.\nAtención a la calidad, consistencia y trazabilidad de los datos.\nComunicación clara para públicos técnicos y no técnicos."
-  },
-  {
-    "objectID": "sobre-mi/index.html#herramientas",
-    "href": "sobre-mi/index.html#herramientas",
-    "title": "Sobre mí",
-    "section": "Herramientas",
-    "text": "Herramientas\nPower BI, SQL, Python, Power Query, DAX, análisis estadístico y visualización de datos."
-  },
-  {
-    "objectID": "sobre-mi/index.html#contacto-profesional",
-    "href": "sobre-mi/index.html#contacto-profesional",
-    "title": "Sobre mí",
-    "section": "Contacto profesional",
-    "text": "Contacto profesional\nLinkedIn GitHub"
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html",
-    "href": "proyectos/vacantes/index.html",
-    "title": "Analítica de cobertura y vacantes",
-    "section": "",
-    "text": "Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#problema",
-    "href": "proyectos/vacantes/index.html#problema",
-    "title": "Analítica de cobertura y vacantes",
-    "section": "",
-    "text": "Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#preguntas-que-responde",
-    "href": "proyectos/vacantes/index.html#preguntas-que-responde",
-    "title": "Analítica de cobertura y vacantes",
-    "section": "Preguntas que responde",
-    "text": "Preguntas que responde\n\n¿Cuál es el nivel general de cobertura?\n¿En qué áreas se concentran las vacantes?\n¿Cómo se compone la fuerza laboral?\n¿Qué posiciones deberían atenderse primero?"
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#solución-desarrollada",
-    "href": "proyectos/vacantes/index.html#solución-desarrollada",
-    "title": "Analítica de cobertura y vacantes",
-    "section": "Solución desarrollada",
-    "text": "Solución desarrollada\nSe construyó un reporte analítico con indicadores de cobertura, vacantes y composición de plantilla; filtros por ubicación, contrato y área; y vistas de detalle para revisar posiciones cubiertas y pendientes."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#resultado",
-    "href": "proyectos/vacantes/index.html#resultado",
-    "title": "Analítica de cobertura y vacantes",
-    "section": "Resultado",
-    "text": "Resultado\nLa solución ofrece una vista ejecutiva de la plantilla y permite pasar del panorama general al detalle de las posiciones, evitando interpretar todas las vacantes con la misma prioridad.\n\n\n\n\n\n\nNota\n\n\n\nCuando tengas la captura y el enlace público definitivos, colócalos en esta página para que el proyecto quede completo."
-  },
-  {
-    "objectID": "proyectos/index.html",
-    "href": "proyectos/index.html",
-    "title": "Proyectos",
-    "section": "",
-    "text": "Cada proyecto presenta el problema, las preguntas que guiaron el análisis, las herramientas utilizadas y los resultados obtenidos. Selecciona una tarjeta para abrir el caso completo.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPresupuesto de Egresos de la Federación 2026\n\n\n\nPower BI\n\nDAX\n\nPower Query\n\nDatos públicos\n\n\n\nDashboard ejecutivo para analizar la distribución, administración y avance del gasto público.\n\n\n\n1 ene 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalítica de cobertura y vacantes\n\n\n\nLooker Studio\n\nCapital humano\n\nIndicadores\n\n\n\nCaso de Business Intelligence para medir cobertura, vacancia y posiciones prioritarias.\n\n\n\n1 dic 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnálisis comercial E-commerce\n\n\n\nSQL\n\nPython\n\nE-commerce\n\n\n\nCaso de SQL y Python para estudiar ventas, clientes y desempeño de productos.\n\n\n\n1 nov 2025\n\n\n\n\n\n\nNo hay resultados"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nDavid González Martínez\n",
-    "section": "",
-    "text": "ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE\n\n\nDavid González Martínez\n\n\nAnalista de Datos con formación matemática y con especialización estadística\n\n\nTransformo datos complejos en indicadores, análisis y reportes claros para apoyar decisiones de negocio.\n\n\nVer proyectos Conocer mi perfil"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Aquí compartiré aprendizajes, procesos y decisiones detrás de mis proyectos.\n\n\n\n\n\n\n\n\n\nCómo presentar un proyecto de datos en un portafolio\n\n\n\nPortafolio\n\nComunicación\n\nDatos\n\n\n\nUna estructura sencilla para explicar el problema, el proceso y el valor de un análisis.\n\n\n\n\n\n14 ago 2026\n\n\n\n\n\nNo hay resultados"
-  },
-  {
-    "objectID": "blog/primer-post/index.html",
-    "href": "blog/primer-post/index.html",
-    "title": "Cómo presentar un proyecto de datos en un portafolio",
-    "section": "",
-    "text": "Un buen proyecto de portafolio no comienza con la herramienta utilizada. Comienza con una pregunta clara y termina explicando qué decisión puede mejorar gracias al análisis."
-  },
-  {
-    "objectID": "blog/primer-post/index.html#una-estructura-útil",
-    "href": "blog/primer-post/index.html#una-estructura-útil",
-    "title": "Cómo presentar un proyecto de datos en un portafolio",
-    "section": "Una estructura útil",
-    "text": "Una estructura útil\n\nContexto: explica por qué existe el problema.\nPregunta: define qué necesitas descubrir o medir.\nProceso: resume cómo preparaste y analizaste los datos.\nResultado: presenta los hallazgos más importantes.\nValor: explica qué decisión puede tomar el lector.\n\nEsta estructura permite que una persona no técnica entienda el proyecto sin perder la posibilidad de revisar el código, el tablero o la metodología."
-  },
-  {
     "objectID": "proyectos/ecommerce/index.html",
     "href": "proyectos/ecommerce/index.html",
     "title": "Análisis comercial E-commerce",
@@ -175,17 +70,45 @@
     "text": "Herramientas\nPower BI, Power Query, DAX y datos públicos del Presupuesto de Egresos de la Federación."
   },
   {
-    "objectID": "proyectos.html",
-    "href": "proyectos.html",
-    "title": "Proyectos",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "David González Martínez",
     "section": "",
-    "text": "Aquí presentaré mis principales proyectos de análisis de datos y Business Intelligence."
+    "text": "&lt;div class=\"landing-hero__copy\"&gt;\n  &lt;p class=\"eyebrow\"&gt;ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE&lt;/p&gt;\n  &lt;h1&gt;Hola, soy&lt;br&gt;&lt;strong&gt;David González.&lt;/strong&gt;&lt;/h1&gt;\n  &lt;p class=\"landing-hero__role\"&gt;Analista de Datos, BI y Estadística&lt;/p&gt;\n  &lt;p class=\"landing-hero__description\"&gt;\n    Desarrollo proyectos que transforman datos complejos en indicadores,\n    visualizaciones y conclusiones útiles para tomar decisiones.\n  &lt;/p&gt;\n\n  &lt;div class=\"landing-hero__actions\"&gt;\n    &lt;a class=\"button-dark\" href=\"#portafolio\"&gt;\n      Ver proyectos &lt;i class=\"bi bi-arrow-down\" aria-hidden=\"true\"&gt;&lt;/i&gt;\n    &lt;/a&gt;\n    &lt;a class=\"button-text\" href=\"https://github.com/DavidGMtz\"&gt;\n      GitHub &lt;i class=\"bi bi-arrow-up-right\" aria-hidden=\"true\"&gt;&lt;/i&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"landing-hero__social\" aria-label=\"Perfiles profesionales\"&gt;\n    &lt;a href=\"https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272\" aria-label=\"LinkedIn\"&gt;&lt;i class=\"bi bi-linkedin\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/a&gt;\n    &lt;a href=\"https://github.com/DavidGMtz\" aria-label=\"GitHub\"&gt;&lt;i class=\"bi bi-github\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"landing-hero__visual\"&gt;\n  &lt;img src=\"assets/img/hero-analytics.svg\" alt=\"Ilustración de un tablero de análisis de datos en una computadora\" /&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;p class=\"section-index\"&gt;01 — ENFOQUE&lt;/p&gt;\n&lt;div&gt;\n  &lt;h2&gt;Del dato a una decisión comprensible.&lt;/h2&gt;\n  &lt;p&gt;\n    Cada caso muestra el problema, el proceso analítico, las herramientas utilizadas\n    y la forma en que los resultados se convierten en información accionable.\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;div class=\"portfolio-heading\"&gt;\n  &lt;div&gt;\n    &lt;p class=\"section-index\"&gt;02 — TRABAJO SELECCIONADO&lt;/p&gt;\n    &lt;h2&gt;Portafolio&lt;/h2&gt;\n  &lt;/div&gt;\n  &lt;p&gt;Proyectos de Business Intelligence, análisis estadístico y visualización de datos.&lt;/p&gt;\n&lt;/div&gt;\n\n&lt;article id=\"pef\" class=\"project-showcase project-showcase--text-first\"&gt;\n  &lt;div class=\"project-showcase__copy\"&gt;\n    &lt;p class=\"project-number\"&gt;PROYECTO 01 · POWER BI&lt;/p&gt;\n    &lt;h3&gt;Presupuesto de Egresos de la Federación 2026&lt;/h3&gt;\n    &lt;p class=\"project-lead\"&gt;\n      Dashboard ejecutivo para explorar la concentración, distribución y seguimiento\n      del gasto público en México.\n    &lt;/p&gt;\n\n    &lt;dl class=\"project-details\"&gt;\n      &lt;div&gt;&lt;dt&gt;Pregunta&lt;/dt&gt;&lt;dd&gt;¿Dónde se concentra el presupuesto y quién administra los recursos?&lt;/dd&gt;&lt;/div&gt;\n      &lt;div&gt;&lt;dt&gt;Solución&lt;/dt&gt;&lt;dd&gt;Indicadores, comparativos territoriales y navegación ejecutiva.&lt;/dd&gt;&lt;/div&gt;\n      &lt;div&gt;&lt;dt&gt;Herramientas&lt;/dt&gt;&lt;dd&gt;Power BI · Power Query · DAX&lt;/dd&gt;&lt;/div&gt;\n    &lt;/dl&gt;\n\n    &lt;a class=\"button-dark\" href=\"proyectos/pef-2026/\"&gt;\n      Consultar proyecto &lt;i class=\"bi bi-arrow-right\" aria-hidden=\"true\"&gt;&lt;/i&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"project-showcase__media project-showcase__media--dark\"&gt;\n    &lt;img src=\"assets/img/pef-2026.svg\" alt=\"Vista provisional del dashboard PEF 2026\" /&gt;\n  &lt;/div&gt;\n&lt;/article&gt;\n\n&lt;article id=\"vacantes\" class=\"project-showcase project-showcase--media-first\"&gt;\n  &lt;div class=\"project-showcase__media\"&gt;\n    &lt;img src=\"assets/img/vacantes.svg\" alt=\"Vista provisional del dashboard de cobertura y vacantes\" /&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"project-showcase__copy\"&gt;\n    &lt;p class=\"project-number\"&gt;PROYECTO 02 · LOOKER STUDIO&lt;/p&gt;\n    &lt;h3&gt;Analítica de cobertura y vacantes&lt;/h3&gt;\n    &lt;p class=\"project-lead\"&gt;\n      Reporte para medir la cobertura de plantilla, localizar la concentración de\n      vacantes y priorizar posiciones que requieren atención.\n    &lt;/p&gt;\n\n    &lt;dl class=\"project-details\"&gt;\n      &lt;div&gt;&lt;dt&gt;Pregunta&lt;/dt&gt;&lt;dd&gt;¿Qué áreas presentan mayor vacancia y riesgo operativo?&lt;/dd&gt;&lt;/div&gt;\n      &lt;div&gt;&lt;dt&gt;Solución&lt;/dt&gt;&lt;dd&gt;Indicadores, filtros y vistas de detalle por posición.&lt;/dd&gt;&lt;/div&gt;\n      &lt;div&gt;&lt;dt&gt;Herramientas&lt;/dt&gt;&lt;dd&gt;Looker Studio · Google Sheets · Campos calculados&lt;/dd&gt;&lt;/div&gt;\n    &lt;/dl&gt;\n\n    &lt;a class=\"button-dark\" href=\"proyectos/vacantes/\"&gt;\n      Consultar proyecto &lt;i class=\"bi bi-arrow-right\" aria-hidden=\"true\"&gt;&lt;/i&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n&lt;/article&gt;\n\n&lt;article id=\"ecommerce\" class=\"project-showcase project-showcase--text-first\"&gt;\n  &lt;div class=\"project-showcase__copy\"&gt;\n    &lt;p class=\"project-number\"&gt;PROYECTO 03 · SQL Y PYTHON&lt;/p&gt;\n    &lt;h3&gt;Análisis comercial E-commerce&lt;/h3&gt;\n    &lt;p class=\"project-lead\"&gt;\n      Caso analítico para estudiar ingresos, clientes recurrentes y desempeño de\n      productos con un enfoque comercial.\n    &lt;/p&gt;\n\n    &lt;dl class=\"project-details\"&gt;\n      &lt;div&gt;&lt;dt&gt;Pregunta&lt;/dt&gt;&lt;dd&gt;¿Qué productos, clientes y periodos explican los ingresos?&lt;/dd&gt;&lt;/div&gt;\n      &lt;div&gt;&lt;dt&gt;Solución&lt;/dt&gt;&lt;dd&gt;Consultas, segmentación, tendencias y visualizaciones.&lt;/dd&gt;&lt;/div&gt;\n      &lt;div&gt;&lt;dt&gt;Herramientas&lt;/dt&gt;&lt;dd&gt;SQL · Python · pandas&lt;/dd&gt;&lt;/div&gt;\n    &lt;/dl&gt;\n\n    &lt;a class=\"button-dark\" href=\"proyectos/ecommerce/\"&gt;\n      Consultar proyecto &lt;i class=\"bi bi-arrow-right\" aria-hidden=\"true\"&gt;&lt;/i&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"project-showcase__media\"&gt;\n    &lt;img src=\"assets/img/ecommerce.svg\" alt=\"Vista provisional del proyecto de análisis E-commerce\" /&gt;\n  &lt;/div&gt;\n&lt;/article&gt;\n\n\n\n\n&lt;div class=\"section-heading-row\"&gt;\n  &lt;p class=\"section-index\"&gt;03 — CAPACIDADES DEMOSTRADAS&lt;/p&gt;\n  &lt;h2&gt;Herramientas aplicadas en los proyectos&lt;/h2&gt;\n&lt;/div&gt;\n\n&lt;div class=\"capabilities-grid\"&gt;\n  &lt;div class=\"capability\"&gt;\n    &lt;span&gt;01&lt;/span&gt;\n    &lt;h3&gt;Preparación&lt;/h3&gt;\n    &lt;p&gt;SQL, Power Query, Excel y validación de calidad.&lt;/p&gt;\n  &lt;/div&gt;\n  &lt;div class=\"capability\"&gt;\n    &lt;span&gt;02&lt;/span&gt;\n    &lt;h3&gt;Análisis&lt;/h3&gt;\n    &lt;p&gt;Python, pandas, DAX y estadística aplicada.&lt;/p&gt;\n  &lt;/div&gt;\n  &lt;div class=\"capability\"&gt;\n    &lt;span&gt;03&lt;/span&gt;\n    &lt;h3&gt;Comunicación&lt;/h3&gt;\n    &lt;p&gt;Power BI, Looker Studio y storytelling con datos.&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;div&gt;\n  &lt;p class=\"section-index\"&gt;04 — CONTACTO&lt;/p&gt;\n  &lt;h2&gt;¿Hablamos de datos?&lt;/h2&gt;\n&lt;/div&gt;\n&lt;div class=\"contact-copy\"&gt;\n  &lt;p&gt;\n    Puedes consultar mi código, conocer mi perfil profesional o descargar mi CV.\n    Los enlaces definitivos se incorporarán en la siguiente revisión.\n  &lt;/p&gt;\n  &lt;div class=\"contact-links\"&gt;\n    &lt;a class=\"button-dark\" href=\"https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272\"&gt;LinkedIn&lt;/a&gt;\n    &lt;a class=\"button-outline\" href=\"https://github.com/DavidGMtz\"&gt;GitHub&lt;/a&gt;\n    &lt;span class=\"button-outline button-disabled\" aria-disabled=\"true\"&gt;Descargar CV&lt;/span&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "proyectos.html#presupuesto-de-egresos-de-la-federación-2026",
-    "href": "proyectos.html#presupuesto-de-egresos-de-la-federación-2026",
-    "title": "Proyectos",
-    "section": "Presupuesto de Egresos de la Federación 2026",
-    "text": "Presupuesto de Egresos de la Federación 2026\nReporte analítico interactivo para estudiar la distribución, concentración y seguimiento del gasto público.\nVer proyecto"
+    "objectID": "proyectos/vacantes/index.html",
+    "href": "proyectos/vacantes/index.html",
+    "title": "Analítica de cobertura y vacantes",
+    "section": "",
+    "text": "Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias."
+  },
+  {
+    "objectID": "proyectos/vacantes/index.html#problema",
+    "href": "proyectos/vacantes/index.html#problema",
+    "title": "Analítica de cobertura y vacantes",
+    "section": "",
+    "text": "Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias."
+  },
+  {
+    "objectID": "proyectos/vacantes/index.html#preguntas-que-responde",
+    "href": "proyectos/vacantes/index.html#preguntas-que-responde",
+    "title": "Analítica de cobertura y vacantes",
+    "section": "Preguntas que responde",
+    "text": "Preguntas que responde\n\n¿Cuál es el nivel general de cobertura?\n¿En qué áreas se concentran las vacantes?\n¿Cómo se compone la fuerza laboral?\n¿Qué posiciones deberían atenderse primero?"
+  },
+  {
+    "objectID": "proyectos/vacantes/index.html#solución-desarrollada",
+    "href": "proyectos/vacantes/index.html#solución-desarrollada",
+    "title": "Analítica de cobertura y vacantes",
+    "section": "Solución desarrollada",
+    "text": "Solución desarrollada\nSe construyó un reporte analítico con indicadores de cobertura, vacantes y composición de plantilla; filtros por ubicación, contrato y área; y vistas de detalle para revisar posiciones cubiertas y pendientes."
+  },
+  {
+    "objectID": "proyectos/vacantes/index.html#resultado",
+    "href": "proyectos/vacantes/index.html#resultado",
+    "title": "Analítica de cobertura y vacantes",
+    "section": "Resultado",
+    "text": "Resultado\nLa solución ofrece una vista ejecutiva de la plantilla y permite pasar del panorama general al detalle de las posiciones, evitando interpretar todas las vacantes con la misma prioridad.\n\n\n\n\n\n\nNota\n\n\n\nCuando tengas la captura y el enlace público definitivos, colócalos en esta página para que el proyecto quede completo."
   }
 ]

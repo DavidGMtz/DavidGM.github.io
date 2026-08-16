@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Portafolio de proyectos de análisis de datos, Business Intelligence y estadística aplicada de David González Martínez.">
 
-<title>David González Martínez | Analista de Datos y BI – David González Martínez</title>
+<title>David González Martínez</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,12 +31,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./assets/img/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,20 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d8817140623cba53acaeb649bff4ec64.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d75f3f58e1eb44f7e1a0e81b492fc5ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -73,9 +58,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="David González Martínez">
+<meta property="og:description" content="Portafolio de proyectos de análisis de datos, Business Intelligence y estadística aplicada de David González Martínez.">
+<meta property="og:site_name" content="David González Martínez">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -89,23 +78,26 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">David González Martínez</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Buscar"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html#inicio"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proyectos.html"> 
-<span class="menu-text">Proyectos</span></a>
+    <a class="nav-link" href="./index.html#portafolio"> 
+<span class="menu-text">Portafolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sobre-mi/index.html"> 
-<span class="menu-text">Sobre mí</span></a>
+    <a class="nav-link" href="./index.html#herramientas"> 
+<span class="menu-text">Herramientas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#contacto"> 
+<span class="menu-text">Contacto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -137,44 +129,182 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section class="portada">
-<div class="presentacion">
-<p class="etiqueta">
-ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE
-</p>
-<h1>
-David González Martínez
-</h1>
-<h2 class="anchored">
-Analista de Datos con formación matemática y con especialización estadística
-</h2>
-<p class="descripcion">
-Transformo datos complejos en indicadores, análisis y reportes claros para apoyar decisiones de negocio.
-</p>
-<div class="botones">
-<p><a class="boton principal" href="proyectos.html">Ver proyectos</a> <a class="boton secundario" href="about.html">Conocer mi perfil</a></p>
-</div>
-</div>
-<div class="visual-portada">
-<div class="grafico">
-<div class="barra barra-1">
+<div class="portfolio-page">
+<section id="inicio" class="landing-hero">
+<div class="site-shell landing-hero__grid">
+<pre><code>&lt;div class="landing-hero__copy"&gt;
+  &lt;p class="eyebrow"&gt;ANÁLISIS DE DATOS · BUSINESS INTELLIGENCE&lt;/p&gt;
+  &lt;h1&gt;Hola, soy&lt;br&gt;&lt;strong&gt;David González.&lt;/strong&gt;&lt;/h1&gt;
+  &lt;p class="landing-hero__role"&gt;Analista de Datos, BI y Estadística&lt;/p&gt;
+  &lt;p class="landing-hero__description"&gt;
+    Desarrollo proyectos que transforman datos complejos en indicadores,
+    visualizaciones y conclusiones útiles para tomar decisiones.
+  &lt;/p&gt;
 
-</div>
-<div class="barra barra-2">
+  &lt;div class="landing-hero__actions"&gt;
+    &lt;a class="button-dark" href="#portafolio"&gt;
+      Ver proyectos &lt;i class="bi bi-arrow-down" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class="button-text" href="https://github.com/DavidGMtz"&gt;
+      GitHub &lt;i class="bi bi-arrow-up-right" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
 
-</div>
-<div class="barra barra-3">
+  &lt;div class="landing-hero__social" aria-label="Perfiles profesionales"&gt;
+    &lt;a href="https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272" aria-label="LinkedIn"&gt;&lt;i class="bi bi-linkedin" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href="https://github.com/DavidGMtz" aria-label="GitHub"&gt;&lt;i class="bi bi-github" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-<div class="barra barra-4">
-
-</div>
-<div class="barra barra-5">
-
-</div>
-</div>
+&lt;div class="landing-hero__visual"&gt;
+  &lt;img src="assets/img/hero-analytics.svg" alt="Ilustración de un tablero de análisis de datos en una computadora" /&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </section>
+<section class="positioning-section">
+<div class="site-shell positioning-grid">
+<pre><code>&lt;p class="section-index"&gt;01 — ENFOQUE&lt;/p&gt;
+&lt;div&gt;
+  &lt;h2&gt;Del dato a una decisión comprensible.&lt;/h2&gt;
+  &lt;p&gt;
+    Cada caso muestra el problema, el proceso analítico, las herramientas utilizadas
+    y la forma en que los resultados se convierten en información accionable.
+  &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+<section id="portafolio" class="portfolio-section">
+<div class="site-shell">
+<pre><code>&lt;div class="portfolio-heading"&gt;
+  &lt;div&gt;
+    &lt;p class="section-index"&gt;02 — TRABAJO SELECCIONADO&lt;/p&gt;
+    &lt;h2&gt;Portafolio&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Proyectos de Business Intelligence, análisis estadístico y visualización de datos.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;article id="pef" class="project-showcase project-showcase--text-first"&gt;
+  &lt;div class="project-showcase__copy"&gt;
+    &lt;p class="project-number"&gt;PROYECTO 01 · POWER BI&lt;/p&gt;
+    &lt;h3&gt;Presupuesto de Egresos de la Federación 2026&lt;/h3&gt;
+    &lt;p class="project-lead"&gt;
+      Dashboard ejecutivo para explorar la concentración, distribución y seguimiento
+      del gasto público en México.
+    &lt;/p&gt;
+
+    &lt;dl class="project-details"&gt;
+      &lt;div&gt;&lt;dt&gt;Pregunta&lt;/dt&gt;&lt;dd&gt;¿Dónde se concentra el presupuesto y quién administra los recursos?&lt;/dd&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;dt&gt;Solución&lt;/dt&gt;&lt;dd&gt;Indicadores, comparativos territoriales y navegación ejecutiva.&lt;/dd&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;dt&gt;Herramientas&lt;/dt&gt;&lt;dd&gt;Power BI · Power Query · DAX&lt;/dd&gt;&lt;/div&gt;
+    &lt;/dl&gt;
+
+    &lt;a class="button-dark" href="proyectos/pef-2026/"&gt;
+      Consultar proyecto &lt;i class="bi bi-arrow-right" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class="project-showcase__media project-showcase__media--dark"&gt;
+    &lt;img src="assets/img/pef-2026.svg" alt="Vista provisional del dashboard PEF 2026" /&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+&lt;article id="vacantes" class="project-showcase project-showcase--media-first"&gt;
+  &lt;div class="project-showcase__media"&gt;
+    &lt;img src="assets/img/vacantes.svg" alt="Vista provisional del dashboard de cobertura y vacantes" /&gt;
+  &lt;/div&gt;
+
+  &lt;div class="project-showcase__copy"&gt;
+    &lt;p class="project-number"&gt;PROYECTO 02 · LOOKER STUDIO&lt;/p&gt;
+    &lt;h3&gt;Analítica de cobertura y vacantes&lt;/h3&gt;
+    &lt;p class="project-lead"&gt;
+      Reporte para medir la cobertura de plantilla, localizar la concentración de
+      vacantes y priorizar posiciones que requieren atención.
+    &lt;/p&gt;
+
+    &lt;dl class="project-details"&gt;
+      &lt;div&gt;&lt;dt&gt;Pregunta&lt;/dt&gt;&lt;dd&gt;¿Qué áreas presentan mayor vacancia y riesgo operativo?&lt;/dd&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;dt&gt;Solución&lt;/dt&gt;&lt;dd&gt;Indicadores, filtros y vistas de detalle por posición.&lt;/dd&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;dt&gt;Herramientas&lt;/dt&gt;&lt;dd&gt;Looker Studio · Google Sheets · Campos calculados&lt;/dd&gt;&lt;/div&gt;
+    &lt;/dl&gt;
+
+    &lt;a class="button-dark" href="proyectos/vacantes/"&gt;
+      Consultar proyecto &lt;i class="bi bi-arrow-right" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+&lt;article id="ecommerce" class="project-showcase project-showcase--text-first"&gt;
+  &lt;div class="project-showcase__copy"&gt;
+    &lt;p class="project-number"&gt;PROYECTO 03 · SQL Y PYTHON&lt;/p&gt;
+    &lt;h3&gt;Análisis comercial E-commerce&lt;/h3&gt;
+    &lt;p class="project-lead"&gt;
+      Caso analítico para estudiar ingresos, clientes recurrentes y desempeño de
+      productos con un enfoque comercial.
+    &lt;/p&gt;
+
+    &lt;dl class="project-details"&gt;
+      &lt;div&gt;&lt;dt&gt;Pregunta&lt;/dt&gt;&lt;dd&gt;¿Qué productos, clientes y periodos explican los ingresos?&lt;/dd&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;dt&gt;Solución&lt;/dt&gt;&lt;dd&gt;Consultas, segmentación, tendencias y visualizaciones.&lt;/dd&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;dt&gt;Herramientas&lt;/dt&gt;&lt;dd&gt;SQL · Python · pandas&lt;/dd&gt;&lt;/div&gt;
+    &lt;/dl&gt;
+
+    &lt;a class="button-dark" href="proyectos/ecommerce/"&gt;
+      Consultar proyecto &lt;i class="bi bi-arrow-right" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class="project-showcase__media"&gt;
+    &lt;img src="assets/img/ecommerce.svg" alt="Vista provisional del proyecto de análisis E-commerce" /&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+</div>
+</section>
+<section id="herramientas" class="capabilities-section">
+<div class="site-shell">
+<pre><code>&lt;div class="section-heading-row"&gt;
+  &lt;p class="section-index"&gt;03 — CAPACIDADES DEMOSTRADAS&lt;/p&gt;
+  &lt;h2&gt;Herramientas aplicadas en los proyectos&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div class="capabilities-grid"&gt;
+  &lt;div class="capability"&gt;
+    &lt;span&gt;01&lt;/span&gt;
+    &lt;h3&gt;Preparación&lt;/h3&gt;
+    &lt;p&gt;SQL, Power Query, Excel y validación de calidad.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="capability"&gt;
+    &lt;span&gt;02&lt;/span&gt;
+    &lt;h3&gt;Análisis&lt;/h3&gt;
+    &lt;p&gt;Python, pandas, DAX y estadística aplicada.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="capability"&gt;
+    &lt;span&gt;03&lt;/span&gt;
+    &lt;h3&gt;Comunicación&lt;/h3&gt;
+    &lt;p&gt;Power BI, Looker Studio y storytelling con datos.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+<section id="contacto" class="contact-section">
+<div class="site-shell contact-grid">
+<pre><code>&lt;div&gt;
+  &lt;p class="section-index"&gt;04 — CONTACTO&lt;/p&gt;
+  &lt;h2&gt;¿Hablamos de datos?&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="contact-copy"&gt;
+  &lt;p&gt;
+    Puedes consultar mi código, conocer mi perfil profesional o descargar mi CV.
+    Los enlaces definitivos se incorporarán en la siguiente revisión.
+  &lt;/p&gt;
+  &lt;div class="contact-links"&gt;
+    &lt;a class="button-dark" href="https://www.linkedin.com/in/david-gonzalez-martinez-5729b7272"&gt;LinkedIn&lt;/a&gt;
+    &lt;a class="button-outline" href="https://github.com/DavidGMtz"&gt;GitHub&lt;/a&gt;
+    &lt;span class="button-outline button-disabled" aria-disabled="true"&gt;Descargar CV&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+</div>
 
 
 
@@ -252,7 +382,7 @@ Transformo datos complejos en indicadores, análisis y reportes claros para apoy
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/davidgmtz\.github\.io\/DavidGM\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/DavidGMtz\.github\.io\/DavidGM\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -585,8 +715,22 @@ Transformo datos complejos en indicadores, análisis y reportes claros para apoy
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 David González Martínez</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Análisis de datos · Business Intelligence · Estadística</p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
