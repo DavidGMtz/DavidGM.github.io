@@ -1,39 +1,106 @@
 ---
-title: "Presupuesto de Egresos de la Federación 2026"
+title: "Proyecto: Presupuesto de Egresos de la Federación 2026"
+subtitle: "Reporte interactivo desarrollado en Power BI"
 description: "Dashboard ejecutivo para analizar la distribución, administración y avance del gasto público."
 date: 2026-01-01
 date-format: "YYYY"
 categories: [Power BI, DAX, Power Query, Datos públicos]
 image: ../../assets/img/pef-2026.svg
-page-layout: article
-toc: true
+page-layout: full
+toc: false
+title-block-banner: "#003366"
+title-block-banner-color: "#ffffff"
+title-block-categories: false
+format:
+  html:
+    body-classes: pef-project-page
 ---
 
-## Descripción del proyecto
+```{=html}
+<div class="project-detail">
+  <div class="project-detail__container">
 
-Reporte de Business Intelligence diseñado para analizar la concentración, el destino, la administración y la ejecución del gasto. Permite comparar entidades, identificar a los principales responsables y detectar diferencias en el avance presupuestario.
+    <section class="project-detail__card" aria-labelledby="descripcion-proyecto">
+      <p class="project-detail__eyebrow">Caso de Business Intelligence</p>
+      <h2 id="descripcion-proyecto">Descripción del proyecto</h2>
+      <p>
+        Reporte de Business Intelligence diseñado para analizar la concentración,
+        el destino, la administración y la ejecución del gasto. Permite comparar
+        entidades, identificar a los principales responsables y detectar diferencias
+        en el avance presupuestario.
+      </p>
+    </section>
 
-## Reporte interactivo
+    <section class="project-detail__report" aria-label="Reporte interactivo de Power BI">
+      <iframe
+        title="Dashboard PEF 2026"
+        src="https://app.powerbi.com/view?r=eyJrIjoiM2I0ODQ1MTctM2M2MS00MDFjLWFjYTUtODQ0YzY0ODVjZjkzIiwidCI6IjVmMjgyOTEwLTE3NmYtNDU5ZC1hYjdkLWI3NDRhYTZlZmMwNyIsImMiOjR9&amp;pageName=9396be8a6b08d1a6c0f3"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </section>
 
-<div class="powerbi-wrapper">
-  <iframe
-    title="Dashboard PEF 2026"
-    src="https://app.powerbi.com/view?r=eyJrIjoiM2I0ODQ1MTctM2M2MS00MDFjLWFjYTUtODQ0YzY0ODVjZjkzIiwidCI6IjVmMjgyOTEwLTE3NmYtNDU5ZC1hYjdkLWI3NDRhYTZlZmMwNyIsImMiOjR9&pageName=9396be8a6b08d1a6c0f3"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
+    <div class="project-detail__actions">
+      <a
+        class="button-dark"
+        href="https://davidgmtz.github.io/proyectoBI_PEF/"
+        target="_blank"
+        rel="noopener">
+        Abrir reporte en otra pestaña
+        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <section class="project-detail__insights" aria-labelledby="preguntas-analisis">
+      <p class="project-detail__eyebrow">Alcance del análisis</p>
+      <h2 id="preguntas-analisis">Preguntas que responde</h2>
+      <p class="project-detail__intro">
+        El reporte organiza la información presupuestaria mediante cinco preguntas
+        clave para facilitar su interpretación.
+      </p>
+
+      <ul class="project-detail__questions">
+        <li>
+          <strong>¿Dónde se concentra el gasto?</strong>
+          <span>Compara la distribución territorial del presupuesto.</span>
+        </li>
+        <li>
+          <strong>¿En qué se gasta?</strong>
+          <span>Identifica los grupos funcionales, funciones y subfunciones con mayor asignación.</span>
+        </li>
+        <li>
+          <strong>¿Quién administra los recursos?</strong>
+          <span>Muestra los ramos y las unidades responsables con mayor participación.</span>
+        </li>
+        <li>
+          <strong>¿Cómo se financia?</strong>
+          <span>Presenta la composición del monto aprobado por fuente de financiamiento.</span>
+        </li>
+        <li>
+          <strong>¿Dónde existe mayor rezago?</strong>
+          <span>Facilita la detección de entidades y funciones con menor avance presupuestario.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="project-detail__tools" aria-labelledby="herramientas-proyecto">
+      <div>
+        <p class="project-detail__eyebrow">Tecnologías</p>
+        <h2 id="herramientas-proyecto">Herramientas</h2>
+      </div>
+      <div class="project-detail__tags" aria-label="Herramientas utilizadas">
+        <span>Power BI</span>
+        <span>Power Query</span>
+        <span>DAX</span>
+        <span>Datos públicos</span>
+      </div>
+    </section>
+
+    <a class="project-detail__back" href="../../#portafolio">
+      <i class="bi bi-arrow-left" aria-hidden="true"></i>
+      Volver al portafolio
+    </a>
+
+  </div>
 </div>
-
-[Abrir el reporte en una pestaña independiente](https://davidgmtz.github.io/proyectoBI_PEF/){.btn .btn-outline-primary}
-
-## Preguntas que responde
-
-- **¿Dónde se concentra el gasto?** Compara la distribución territorial del presupuesto.
-- **¿En qué se gasta?** Identifica los grupos funcionales, funciones y subfunciones con mayor asignación.
-- **¿Quién administra los recursos?** Muestra los ramos y unidades responsables con mayor participación.
-- **¿Cómo se financia?** Presenta la composición del monto aprobado por fuente de financiamiento.
-- **¿Dónde existe mayor rezago?** Facilita la detección de entidades y funciones con menor avance presupuestario.
-
-## Herramientas
-
-Power BI, Power Query, DAX y datos públicos del Presupuesto de Egresos de la Federación.
+```

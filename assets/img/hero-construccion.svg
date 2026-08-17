@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" role="img" aria-labelledby="title desc">
+  <title id="title">Visual provisional en construcción</title>
+  <desc id="desc">Espacio provisional con un engrane que será sustituido por una imagen profesional.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f7fa"/>
+      <stop offset="1" stop-color="#e7eef7"/>
+    </linearGradient>
+    <linearGradient id="gear" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2463eb"/>
+      <stop offset="1" stop-color="#0a2447"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="724" height="434" rx="28" fill="url(#background)" stroke="#cbd7e5" stroke-width="3" stroke-dasharray="12 10"/>
+  <rect x="74" y="70" width="612" height="316" rx="20" fill="#ffffff" fill-opacity=".72" stroke="#d7e1ed"/>
+
+  <g transform="translate(380 210)">
+    <g fill="#2463eb">
+      <rect x="-13" y="-91" width="26" height="34" rx="5"/>
+      <rect x="-13" y="57" width="26" height="34" rx="5"/>
+      <rect x="57" y="-13" width="34" height="26" rx="5"/>
+      <rect x="-91" y="-13" width="34" height="26" rx="5"/>
+      <rect x="-13" y="-91" width="26" height="34" rx="5" transform="rotate(45)"/>
+      <rect x="-13" y="57" width="26" height="34" rx="5" transform="rotate(45)"/>
+      <rect x="57" y="-13" width="34" height="26" rx="5" transform="rotate(45)"/>
+      <rect x="-91" y="-13" width="34" height="26" rx="5" transform="rotate(45)"/>
+    </g>
+    <circle r="65" fill="url(#gear)"/>
+    <circle r="28" fill="#f5f7fa"/>
+  </g>
+
+  <text x="380" y="342" text-anchor="middle" fill="#0a2447" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="2">VISUAL EN CONSTRUCCIÓN</text>
+  <text x="380" y="371" text-anchor="middle" fill="#627d98" font-family="Segoe UI, Arial, sans-serif" font-size="14">Este espacio se sustituirá por una imagen profesional.</text>
+</svg>
