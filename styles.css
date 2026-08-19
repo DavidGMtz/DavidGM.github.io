@@ -427,24 +427,6 @@ h3 {
   text-decoration: none;
 }
 
-.project-showcase__media::after {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 20%;
-  height: 100%;
-  content: "";
-  background: linear-gradient(135deg, transparent 50%, rgba(255, 255, 255, 0.95) 50%);
-  pointer-events: none;
-}
-
-.project-showcase--media-first .project-showcase__media::after {
-  right: auto;
-  left: 0;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.95) 50%, transparent 50%);
-}
-
 .project-showcase__media img {
   display: block;
   width: 100%;
@@ -1008,10 +990,6 @@ footer.footer {
 
   .project-showcase h3 {
     font-size: clamp(1.85rem, 9vw, 2.7rem);
-  }
-
-  .project-showcase__media::after {
-    display: none;
   }
 
   .project-details > div {

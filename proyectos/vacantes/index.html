@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2025-01-01">
 <meta name="description" content="Caso de Business Intelligence para medir cobertura, vacancia y posiciones prioritarias.">
 
-<title>Analítica de cobertura y vacantes – David González Martínez</title>
+<title>Cobertura y vacantes: caso de Business Intelligence en Looker Studio – David González Martínez</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Analítica de cobertura y vacantes – David González Martínez">
+<meta property="og:title" content="Cobertura y vacantes: caso de Business Intelligence en Looker Studio – David González Martínez">
 <meta property="og:description" content="Caso de Business Intelligence para medir cobertura, vacancia y posiciones prioritarias.">
 <meta property="og:image" content="https://DavidGMtz.github.io/DavidGM.github.io/assets/img/vacantes.svg">
 <meta property="og:site_name" content="David González Martínez">
@@ -126,22 +126,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
+    <h2 id="toc-title">Contenido</h2>
    
   <ul>
-  <li><a href="#problema" id="toc-problema" class="nav-link active" data-scroll-target="#problema">Problema</a></li>
-  <li><a href="#preguntas-que-responde" id="toc-preguntas-que-responde" class="nav-link" data-scroll-target="#preguntas-que-responde">Preguntas que responde</a></li>
-  <li><a href="#solución-desarrollada" id="toc-solución-desarrollada" class="nav-link" data-scroll-target="#solución-desarrollada">Solución desarrollada</a></li>
+  <li><a href="#resumen-del-proyecto" id="toc-resumen-del-proyecto" class="nav-link active" data-scroll-target="#resumen-del-proyecto">Resumen del proyecto</a></li>
+  <li><a href="#dashboard-interactivo" id="toc-dashboard-interactivo" class="nav-link" data-scroll-target="#dashboard-interactivo">Dashboard interactivo</a></li>
+  <li><a href="#contexto-y-problema-de-negocio" id="toc-contexto-y-problema-de-negocio" class="nav-link" data-scroll-target="#contexto-y-problema-de-negocio">Contexto y problema de negocio</a></li>
+  <li><a href="#enfoque-analítico" id="toc-enfoque-analítico" class="nav-link" data-scroll-target="#enfoque-analítico">Enfoque analítico</a></li>
+  <li><a href="#solución-desarrollada" id="toc-solución-desarrollada" class="nav-link" data-scroll-target="#solución-desarrollada">Solución desarrollada</a>
+  <ul class="collapse">
+  <li><a href="#estado-ejecutivo" id="toc-estado-ejecutivo" class="nav-link" data-scroll-target="#estado-ejecutivo">1. Estado ejecutivo</a></li>
+  <li><a href="#diagnóstico-de-las-brechas" id="toc-diagnóstico-de-las-brechas" class="nav-link" data-scroll-target="#diagnóstico-de-las-brechas">2. Diagnóstico de las brechas</a></li>
+  <li><a href="#detalle-operativo" id="toc-detalle-operativo" class="nav-link" data-scroll-target="#detalle-operativo">3. Detalle operativo</a></li>
+  </ul></li>
+  <li><a href="#interactividad" id="toc-interactividad" class="nav-link" data-scroll-target="#interactividad">Interactividad</a></li>
+  <li><a href="#decisiones-de-diseño" id="toc-decisiones-de-diseño" class="nav-link" data-scroll-target="#decisiones-de-diseño">Decisiones de diseño</a></li>
   <li><a href="#resultado" id="toc-resultado" class="nav-link" data-scroll-target="#resultado">Resultado</a></li>
+  <li><a href="#alcance-y-siguientes-pasos" id="toc-alcance-y-siguientes-pasos" class="nav-link" data-scroll-target="#alcance-y-siguientes-pasos">Alcance y siguientes pasos</a></li>
+  <li><a href="#herramientas-utilizadas" id="toc-herramientas-utilizadas" class="nav-link" data-scroll-target="#herramientas-utilizadas">Herramientas utilizadas</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Analítica de cobertura y vacantes</h1>
+<h1 class="title">Cobertura y vacantes: caso de Business Intelligence en Looker Studio</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Looker Studio</div>
     <div class="quarto-category">Capital humano</div>
@@ -174,39 +185,242 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="problema" class="level2">
-<h2 class="anchored" data-anchor-id="problema">Problema</h2>
-<p>Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias.</p>
-</section>
-<section id="preguntas-que-responde" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas-que-responde">Preguntas que responde</h2>
-<ul>
-<li>¿Cuál es el nivel general de cobertura?</li>
-<li>¿En qué áreas se concentran las vacantes?</li>
-<li>¿Cómo se compone la fuerza laboral?</li>
-<li>¿Qué posiciones deberían atenderse primero?</li>
-</ul>
-</section>
-<section id="solución-desarrollada" class="level2">
-<h2 class="anchored" data-anchor-id="solución-desarrollada">Solución desarrollada</h2>
-<p>Se construyó un reporte analítico con indicadores de cobertura, vacantes y composición de plantilla; filtros por ubicación, contrato y área; y vistas de detalle para revisar posiciones cubiertas y pendientes.</p>
-</section>
-<section id="resultado" class="level2">
-<h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
-<p>La solución ofrece una vista ejecutiva de la plantilla y permite pasar del panorama general al detalle de las posiciones, evitando interpretar todas las vacantes con la misma prioridad.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<style>
+.dashboard-container {
+  position: relative;
+  width: 100%;
+  height: min(80vh, 900px);
+  min-height: 650px;
+  overflow: hidden;
+  border: 1px solid #d9e0ea;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: 0 8px 24px rgba(15, 35, 70, 0.08);
+}
+
+.dashboard-container iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 8px;
+  }
+}
+</style>
+<div class="d-flex gap-2 flex-wrap mb-4">
+<p><a href="https://datastudio.google.com/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974" class="btn btn-primary" target="_blank" rel="noopener">Ver dashboard en pantalla completa</a></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1mjWQ99Oa--_sCNHzZgePf7TCE1JMvpTF4SafJvT7siE/edit?usp=sharing" class="btn btn-outline-primary" target="_blank" rel="noopener">Consultar base en Google Sheets</a></p>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Nota
+<div class="callout-body-container">
+<p>Este caso practico forma parte de una prueba tecnica referente a una organización ficticia. El objetivo fue transformar una base operativa de estructura organizacional en una herramienta ejecutiva para evaluar cobertura, vacancia y posiciones críticas.</p>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Cuando tengas la captura y el enlace público definitivos, colócalos en esta página para que el proyecto quede completo.</p>
+</div>
+<section id="resumen-del-proyecto" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-del-proyecto">Resumen del proyecto</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Usuario principal</td>
+<td>Dirección General / CEO</td>
+</tr>
+<tr class="even">
+<td>Necesidad</td>
+<td>Conocer en menos de dos minutos si la estructura opera con una cobertura adecuada y dónde existen faltantes críticos</td>
+</tr>
+<tr class="odd">
+<td>Fuente de datos</td>
+<td>Google Sheets</td>
+</tr>
+<tr class="even">
+<td>Herramienta de visualización</td>
+<td>Looker Studio</td>
+</tr>
+<tr class="odd">
+<td>Enfoque</td>
+<td>Cobertura de plantilla, criticidad de vacantes, composición jerárquica y distribución territorial</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dashboard-interactivo" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="dashboard-interactivo">Dashboard interactivo</h2>
+<div class="column-page">
+<div class="dashboard-container">
+<iframe src="https://datastudio.google.com/embed/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974/page/z2w4F" frameborder="0" style="border:0" allowfullscreen="" sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-forms allow-popups">
+</iframe>
 </div>
 </div>
+</section>
+<section id="contexto-y-problema-de-negocio" class="level2">
+<h2 class="anchored" data-anchor-id="contexto-y-problema-de-negocio">Contexto y problema de negocio</h2>
+<p>Empresa Fantasma se encontraba en una fase de consolidación de su estructura organizacional. La Dirección General requería conocer el estado de la plantilla y la concentración de vacantes para tomar decisiones sobre reclutamiento, reasignación de personal y priorización de posiciones críticas.</p>
+<p>El proposito es diseñar un dashboard ejecutivo que respondiera cuatro preguntas:</p>
+<ol type="1">
+<li>¿Qué porcentaje de la estructura autorizada se encuentra cubierto?</li>
+<li>¿En qué áreas y ubicaciones se concentran las vacantes?</li>
+<li>¿Cuántas vacantes corresponden a posiciones críticas?</li>
+<li>¿Cómo se compone la fuerza laboral por nivel jerárquico?</li>
+</ol>
+</section>
+<section id="enfoque-analítico" class="level2">
+<h2 class="anchored" data-anchor-id="enfoque-analítico">Enfoque analítico</h2>
+<p>La información de Google Sheets se organizó mediante una fuente de datos reutilizable en Looker Studio.</p>
+<p>A partir de los campos de posición, estado de cobertura, clasificación, área, ruta organizacional, puesto y ubicación, se definieron indicadores que separan el estado global de la plantilla de las necesidades específicas de cobertura.</p>
+<p>Los principales cálculos fueron:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cobertura de la estructura</td>
+<td>Plazas cubiertas / plazas autorizadas</td>
+</tr>
+<tr class="even">
+<td>Tasa de vacancia</td>
+<td>Plazas vacantes / plazas autorizadas</td>
+</tr>
+<tr class="odd">
+<td>Vacantes críticas</td>
+<td>Posiciones vacantes clasificadas en los niveles A y B</td>
+</tr>
+<tr class="even">
+<td>Composición jerárquica</td>
+<td>Distribución de plazas cubiertas entre directivos, mandos medios y personal operativo</td>
+</tr>
+<tr class="odd">
+<td>Concentración por área y ubicación</td>
+<td>Conteo de colaboradores o vacantes agrupado por unidad organizacional y zona geográfica</td>
+</tr>
+</tbody>
+</table>
+<p>Esta definición evitó interpretar todas las vacantes con el mismo nivel de urgencia y permitió vincular cada indicador con una decisión concreta.</p>
+</section>
+<section id="solución-desarrollada" class="level2">
+<h2 class="anchored" data-anchor-id="solución-desarrollada">Solución desarrollada</h2>
+<p>El dashboard se estructuró en tres niveles de lectura.</p>
+<section id="estado-ejecutivo" class="level3">
+<h3 class="anchored" data-anchor-id="estado-ejecutivo">1. Estado ejecutivo</h3>
+<p>La parte superior concentra los indicadores indispensables para determinar el estado de la organización:</p>
+<ul>
+<li><strong>87.9% de cobertura:</strong> 1,643 plazas cubiertas de 1,869 autorizadas.</li>
+<li><strong>226 vacantes:</strong> equivalentes a una tasa de vacancia de 12.1%.</li>
+<li><strong>11 vacantes críticas:</strong> cuatro de nivel A y siete de nivel B.</li>
+<li><strong>Área cubierta con mayor concentración:</strong> Modelos de Desarrollo, con 634 colaboradores.</li>
+<li><strong>Composición de la plantilla cubierta:</strong> 126 directivos, 331 mandos medios y 1,186 operativos.</li>
+</ul>
+</section>
+<section id="diagnóstico-de-las-brechas" class="level3">
+<h3 class="anchored" data-anchor-id="diagnóstico-de-las-brechas">2. Diagnóstico de las brechas</h3>
+<p>La sección intermedia permite identificar dónde se concentra el problema:</p>
+<ul>
+<li>Comparación de vacantes críticas A-B y operativas por área.</li>
+<li>Mapa de concentración de plazas cubiertas.</li>
+<li>Ranking de vacantes por ubicación.</li>
+<li>Lectura narrativa de la composición laboral y la tasa de vacancia.</li>
+</ul>
+<p>La mayor cantidad de vacantes se localiza en:</p>
+<ul>
+<li><strong>CDMX:</strong> 69 vacantes.</li>
+<li><strong>Sinaloa:</strong> 52 vacantes.</li>
+<li><strong>Guadalajara:</strong> 37 vacantes.</li>
+<li><strong>Puebla:</strong> 29 vacantes.</li>
+</ul>
+<p>Esta vista permite orientar la revisión hacia las zonas con mayor volumen pendiente, sin perder la distinción entre cantidad y criticidad.</p>
+</section>
+<section id="detalle-operativo" class="level3">
+<h3 class="anchored" data-anchor-id="detalle-operativo">3. Detalle operativo</h3>
+<p>La tabla inferior permite pasar del indicador agregado a la posición específica. Incluye:</p>
+<ul>
+<li>Estado de la vacante.</li>
+<li>Clasificación de la posición.</li>
+<li>Área responsable.</li>
+<li>Ruta organizacional.</li>
+<li>Puesto y ubicación.</li>
+<li>Número de plazas.</li>
+</ul>
+<p>De esta manera, la Dirección puede detectar una brecha y posteriormente consultar cuáles son las posiciones que la explican.</p>
+</section>
+</section>
+<section id="interactividad" class="level2">
+<h2 class="anchored" data-anchor-id="interactividad">Interactividad</h2>
+<p>Se incorporaron controles por:</p>
+<ul>
+<li>Tipo de nómina.</li>
+<li>Área.</li>
+<li>Estado.</li>
+<li>Estado de cobertura.</li>
+</ul>
+<p>También se agregó una opción para restablecer todos los filtros.</p>
+<p>Los controles actualizan de forma coordinada los KPI, gráficos, mapa y tabla, permitiendo analizar segmentos específicos sin crear reportes adicionales.</p>
+</section>
+<section id="decisiones-de-diseño" class="level2">
+<h2 class="anchored" data-anchor-id="decisiones-de-diseño">Decisiones de diseño</h2>
+<p>La propuesta utiliza azul marino, gris pizarra y fondos blancos para mantener contraste y sobriedad.</p>
+<p>La jerarquía visual responde al tiempo limitado del usuario final:</p>
+<ol type="1">
+<li><strong>KPIs en la parte superior:</strong> ofrecen el diagnóstico inicial.</li>
+<li><strong>Comparaciones en la zona intermedia:</strong> explican dónde se concentra la brecha.</li>
+<li><strong>Detalle en la parte inferior:</strong> permite validar posiciones concretas.</li>
+</ol>
+<p>También se redujo el número de colores y elementos decorativos. El azul oscuro identifica información prioritaria; los grises se utilizan como contexto y comparación.</p>
+<p>Esto evita que el formato compita con los datos.</p>
+</section>
+<section id="resultado" class="level2">
+<h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
+<p>La solución convierte una base de posiciones en una secuencia de decisión:</p>
+<p><strong>Estado general de la estructura → concentración de brechas → ubicación del problema → posición que requiere atención.</strong></p>
+<p>El CEO puede determinar rápidamente que la organización presenta una cobertura de 87.9%, identificar 226 plazas pendientes y separar las 11 posiciones críticas del resto de las vacantes.</p>
+<p>El dashboard no sustituye el proceso de priorización de Capital Humano, pero proporciona una base consistente para dirigirlo.</p>
+</section>
+<section id="alcance-y-siguientes-pasos" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-y-siguientes-pasos">Alcance y siguientes pasos</h2>
+<p>El análisis representa una fotografía de la estructura disponible en la fuente.</p>
+<p>Para evolucionarlo hacia una herramienta de seguimiento sería necesario incorporar información histórica y del proceso de reclutamiento. Esto permitiría medir:</p>
+<ul>
+<li>Tendencias de cobertura.</li>
+<li>Antigüedad de las vacantes.</li>
+<li>Tiempo promedio de contratación.</li>
+<li>Cumplimiento de objetivos por área.</li>
+<li>Evolución de las vacantes críticas.</li>
+</ul>
+</section>
+<section id="herramientas-utilizadas" class="level2">
+<h2 class="anchored" data-anchor-id="herramientas-utilizadas">Herramientas utilizadas</h2>
+<ul>
+<li><strong>Google Sheets:</strong> almacenamiento y preparación de la base.</li>
+<li><strong>Looker Studio:</strong> modelado de campos, métricas, filtros y visualización ejecutiva.</li>
+<li><strong>Campos calculados:</strong> cobertura, vacancia, clasificación y composición de plantilla.</li>
+</ul>
 
 
 </section>
