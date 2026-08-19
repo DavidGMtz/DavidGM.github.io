@@ -45,6 +45,4 @@ ventas_mensuales = (
 )
 ```
 
-::: {.callout-tip}
-Sustituye estos ejemplos por el código, las gráficas y las conclusiones reales del proyecto cuando termines el análisis.
-:::
+
