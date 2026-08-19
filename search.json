@@ -32,7 +32,7 @@
     "href": "proyectos/ecommerce/index.html#ejemplo-de-código-python",
     "title": "Análisis comercial E-commerce",
     "section": "Ejemplo de código Python",
-    "text": "Ejemplo de código Python\nventas_mensuales = (\n    ventas\n    .groupby(\"mes\", as_index=False)\n    .agg(ingresos=(\"importe\", \"sum\"),\n         clientes=(\"cliente_id\", \"nunique\"))\n)\n\n\n\n\n\n\nTip\n\n\n\nSustituye estos ejemplos por el código, las gráficas y las conclusiones reales del proyecto cuando termines el análisis."
+    "text": "Ejemplo de código Python\nventas_mensuales = (\n    ventas\n    .groupby(\"mes\", as_index=False)\n    .agg(ingresos=(\"importe\", \"sum\"),\n         clientes=(\"cliente_id\", \"nunique\"))\n)"
   },
   {
     "objectID": "proyectos/pef-2026/index.html",
