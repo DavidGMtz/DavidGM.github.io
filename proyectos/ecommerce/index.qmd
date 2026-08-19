@@ -9,6 +9,7 @@ page-layout: article
 toc: true
 ---
 
+
 ## Objetivo
 
 Analizar el comportamiento comercial de una tienda en línea para identificar tendencias de ventas, clientes recurrentes y productos con mayor aportación a los ingresos.

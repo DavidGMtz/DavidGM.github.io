@@ -1,10 +1,10 @@
 ---
 title: "Proyecto: Presupuesto de Egresos de la Federación 2026"
-subtitle: "Reporte interactivo desarrollado en Power BI"
-description: "Dashboard ejecutivo para analizar la distribución, administración y avance del gasto público."
+subtitle: "Pipeline de datos en Python y reporte interactivo en Power BI"
+description: "Proyecto de Business Intelligence para analizar la distribución, administración y avance del gasto público."
 date: 2026-01-01
 date-format: "YYYY"
-categories: [Power BI, DAX, Power Query, Datos públicos]
+categories: [Power BI, Python, DAX, Power Query, Datos públicos]
 image: ../../assets/img/pef-2026.svg
 page-layout: full
 toc: false
@@ -20,18 +20,42 @@ format:
 <div class="project-detail">
   <div class="project-detail__container">
 
-    <section class="project-detail__card" aria-labelledby="descripcion-proyecto">
-      <p class="project-detail__eyebrow">Caso de Business Intelligence</p>
-      <h2 id="descripcion-proyecto">Descripción del proyecto</h2>
+    <section
+      class="project-detail__card"
+      aria-labelledby="descripcion-proyecto"
+    >
+      <p class="project-detail__eyebrow">
+        Caso de Business Intelligence
+      </p>
+
+      <h2 id="descripcion-proyecto">
+        Descripción del proyecto
+      </h2>
+
       <p>
-        Reporte de Business Intelligence diseñado para analizar la concentración,
-        el destino, la administración y la ejecución del gasto. Permite comparar
-        entidades, identificar a los principales responsables y detectar diferencias
-        en el avance presupuestario.
+        Proyecto de Business Intelligence diseñado para analizar la distribución,
+        administración y avance del Presupuesto de Egresos de la Federación.
+        La solución integra un proceso de preparación de datos desarrollado en
+        Python con un dashboard ejecutivo construido en Power BI.
+      </p>
+
+      <p>
+        El reporte permite explorar cómo se distribuye el gasto entre entidades
+        federativas, funciones de gobierno, ramos administrativos, unidades
+        responsables, programas presupuestarios y fuentes de financiamiento.
+      </p>
+
+      <p>
+        También facilita la comparación entre los montos aprobados, modificados
+        y pagados para detectar diferencias en el avance presupuestario y localizar
+        áreas con posibles rezagos.
       </p>
     </section>
 
-    <section class="project-detail__report" aria-label="Reporte interactivo de Power BI">
+    <section
+      class="project-detail__report"
+      aria-label="Reporte interactivo de Power BI"
+    >
       <iframe
         title="Dashboard PEF 2026"
         src="https://app.powerbi.com/view?r=eyJrIjoiM2I0ODQ1MTctM2M2MS00MDFjLWFjYTUtODQ0YzY0ODVjZjkzIiwidCI6IjVmMjgyOTEwLTE3NmYtNDU5ZC1hYjdkLWI3NDRhYTZlZmMwNyIsImMiOjR9&amp;pageName=9396be8a6b08d1a6c0f3"
@@ -40,63 +64,383 @@ format:
       </iframe>
     </section>
 
-    <div class="project-detail__actions">
+    <div
+      class="project-detail__actions"
+      style="gap: 0.8rem; flex-wrap: wrap;"
+    >
+      <a
+        class="button-outline"
+        href="https://github.com/DavidGMtz/proyectoBI_PEF"
+        target="_blank"
+        rel="noopener"
+      >
+        Consultar código en GitHub
+        <i class="bi bi-github" aria-hidden="true"></i>
+      </a>
+
       <a
         class="button-dark"
         href="https://davidgmtz.github.io/proyectoBI_PEF/"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         Abrir reporte en otra pestaña
         <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
       </a>
     </div>
 
-    <section class="project-detail__insights" aria-labelledby="preguntas-analisis">
-      <p class="project-detail__eyebrow">Alcance del análisis</p>
-      <h2 id="preguntas-analisis">Preguntas que responde</h2>
+    <section
+      class="project-detail__insights"
+      aria-labelledby="preguntas-analisis"
+    >
+      <p class="project-detail__eyebrow">
+        Alcance del análisis
+      </p>
+
+      <h2 id="preguntas-analisis">
+        Preguntas que responde
+      </h2>
+
       <p class="project-detail__intro">
-        El reporte organiza la información presupuestaria mediante cinco preguntas
-        clave para facilitar su interpretación.
+        El dashboard organiza la información presupuestaria mediante cinco
+        preguntas que permiten pasar del panorama nacional al detalle de las
+        unidades responsables.
       </p>
 
       <ul class="project-detail__questions">
         <li>
           <strong>¿Dónde se concentra el gasto?</strong>
-          <span>Compara la distribución territorial del presupuesto.</span>
+          <span>
+            Compara la distribución territorial del presupuesto entre
+            las entidades federativas.
+          </span>
         </li>
+
         <li>
           <strong>¿En qué se gasta?</strong>
-          <span>Identifica los grupos funcionales, funciones y subfunciones con mayor asignación.</span>
+          <span>
+            Identifica los grupos funcionales, funciones, subfunciones y
+            objetos de gasto con mayor asignación.
+          </span>
         </li>
+
         <li>
           <strong>¿Quién administra los recursos?</strong>
-          <span>Muestra los ramos y las unidades responsables con mayor participación.</span>
+          <span>
+            Muestra los ramos y las unidades responsables con mayor
+            participación presupuestaria.
+          </span>
         </li>
+
         <li>
           <strong>¿Cómo se financia?</strong>
-          <span>Presenta la composición del monto aprobado por fuente de financiamiento.</span>
+          <span>
+            Presenta la composición del monto aprobado por fuente de
+            financiamiento y tipo de gasto.
+          </span>
         </li>
+
         <li>
           <strong>¿Dónde existe mayor rezago?</strong>
-          <span>Facilita la detección de entidades y funciones con menor avance presupuestario.</span>
+          <span>
+            Facilita la detección de entidades y funciones con menor avance
+            entre el presupuesto aprobado y el monto pagado.
+          </span>
         </li>
       </ul>
     </section>
 
-    <section class="project-detail__tools" aria-labelledby="herramientas-proyecto">
-      <div>
-        <p class="project-detail__eyebrow">Tecnologías</p>
-        <h2 id="herramientas-proyecto">Herramientas</h2>
+    <section
+      class="project-detail__card"
+      aria-labelledby="proceso-python"
+    >
+      <p class="project-detail__eyebrow">
+        Preparación de datos
+      </p>
+
+      <h2 id="proceso-python">
+        Proceso desarrollado con Python
+      </h2>
+
+      <p>
+        Python se utilizó como herramienta de extracción, exploración, validación
+        y transformación de los datos antes de incorporarlos a Power BI. El
+        procesamiento se documentó en un notebook reproducible disponible en
+        el repositorio del proyecto.
+      </p>
+
+      <ul class="project-detail__questions">
+        <li>
+          <strong>1. Extracción de los datos</strong>
+          <span>
+            Se automatizó la descarga del archivo CSV desde el repositorio
+            público de datos utilizando <code>requests</code>,
+            <code>BytesIO</code> y <code>pandas</code>.
+          </span>
+        </li>
+
+        <li>
+          <strong>2. Consulta de metadatos</strong>
+          <span>
+            Se descargó el diccionario presupuestario en Excel para interpretar
+            correctamente los identificadores, descripciones y clasificaciones
+            presentes en la base.
+          </span>
+        </li>
+
+        <li>
+          <strong>3. Análisis exploratorio</strong>
+          <span>
+            Se revisaron dimensiones, tipos de datos, valores nulos,
+            distribuciones de los montos y estructura general del conjunto
+            de datos.
+          </span>
+        </li>
+
+        <li>
+          <strong>4. Validación de granularidad</strong>
+          <span>
+            Se definió una combinación de campos presupuestarios para comprobar
+            que cada registro representara una observación única dentro de la
+            estructura del gasto.
+          </span>
+        </li>
+
+        <li>
+          <strong>5. Tratamiento de duplicados</strong>
+          <span>
+            Los registros repetidos correspondientes a la misma clave
+            presupuestaria se consolidaron mediante la suma de los montos
+            financieros, evitando eliminar información relevante.
+          </span>
+        </li>
+
+        <li>
+          <strong>6. Validaciones de consistencia</strong>
+          <span>
+            Se compararon montos mensuales y anuales, además de revisar valores
+            negativos asociados con ajustes, devoluciones y movimientos
+            presupuestarios.
+          </span>
+        </li>
+
+        <li>
+          <strong>7. Construcción del modelo estrella</strong>
+          <span>
+            La base depurada se separó en una tabla de hechos y diferentes
+            dimensiones para facilitar las relaciones y medidas utilizadas
+            posteriormente en Power BI.
+          </span>
+        </li>
+
+        <li>
+          <strong>8. Exportación a Parquet</strong>
+          <span>
+            Las tablas resultantes se almacenaron en archivos Parquet mediante
+            <code>PyArrow</code>, reduciendo el tamaño y conservando los tipos
+            de datos.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="project-detail__insights"
+      aria-labelledby="modelo-datos"
+    >
+      <p class="project-detail__eyebrow">
+        Modelado dimensional
+      </p>
+
+      <h2 id="modelo-datos">
+        Modelo de datos
+      </h2>
+
+      <p class="project-detail__intro">
+        La estructura original contenía numerosos identificadores y niveles
+        jerárquicos. Para facilitar el análisis se organizó la información
+        mediante un modelo estrella.
+      </p>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Tabla</th>
+              <th>Contenido</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><strong>fact_gasto</strong></td>
+              <td>
+                Montos aprobados, modificados, mensuales y pagados, junto con
+                las claves que relacionan cada registro.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_ramo</strong></td>
+              <td>
+                Ramos administrativos responsables del ejercicio de los
+                recursos.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_ur</strong></td>
+              <td>
+                Unidades responsables asociadas con cada ramo.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_func</strong></td>
+              <td>
+                Grupos funcionales, funciones y subfunciones del gasto.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_programa</strong></td>
+              <td>
+                Modalidades y programas presupuestarios.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_objeto_gasto</strong></td>
+              <td>
+                Capítulos, conceptos, partidas genéricas y partidas
+                específicas.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_ff</strong></td>
+              <td>
+                Fuentes de financiamiento.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_entidad</strong></td>
+              <td>
+                Entidades federativas utilizadas para el análisis territorial.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>dim_tgasto</strong></td>
+              <td>
+                Clasificación correspondiente al tipo de gasto.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="project-detail__tags" aria-label="Herramientas utilizadas">
+
+      <p>
+        Para las jerarquías de función, programa y objeto de gasto se generaron
+        claves compuestas que permiten vincular las dimensiones con la tabla
+        de hechos.
+      </p>
+    </section>
+
+    <section
+      class="project-detail__card"
+      aria-labelledby="construccion-dashboard"
+    >
+      <p class="project-detail__eyebrow">
+        Visualización
+      </p>
+
+      <h2 id="construccion-dashboard">
+        Construcción del dashboard
+      </h2>
+
+      <p>
+        Las tablas preparadas en Python se incorporaron a Power BI para
+        construir las relaciones del modelo, desarrollar las medidas analíticas
+        y diseñar las visualizaciones.
+      </p>
+
+      <p>
+        La primera parte del reporte ofrece una lectura territorial mediante un
+        mapa de México y comparaciones entre entidades. Las siguientes vistas
+        permiten explorar el destino funcional del gasto, los responsables de
+        administrarlo, las fuentes de financiamiento y el avance presupuestario.
+      </p>
+
+      <p>
+        La navegación permite pasar del indicador nacional a niveles más
+        detallados sin perder el contexto de los filtros seleccionados.
+        De esta manera, el dashboard no solamente muestra montos: también
+        permite explicar dónde se encuentran, quién los administra y cuál
+        es su nivel de ejecución.
+      </p>
+    </section>
+
+    <section
+      class="project-detail__insights"
+      aria-labelledby="resultado-proyecto"
+    >
+      <p class="project-detail__eyebrow">
+        Resultado
+      </p>
+
+      <h2 id="resultado-proyecto">
+        Del dato público a una herramienta de consulta
+      </h2>
+
+      <p class="project-detail__intro">
+        El proyecto transforma una base presupuestaria de alta dimensionalidad
+        en una herramienta de consulta que permite comparar territorios,
+        clasificaciones del gasto y responsables administrativos.
+      </p>
+
+      <p>
+        La combinación de Python, modelado dimensional y Power BI proporciona
+        trazabilidad desde la extracción de los datos hasta la presentación
+        de los indicadores.
+      </p>
+    </section>
+
+    <section
+      class="project-detail__tools"
+      aria-labelledby="herramientas-proyecto"
+    >
+      <div>
+        <p class="project-detail__eyebrow">
+          Tecnologías
+        </p>
+
+        <h2 id="herramientas-proyecto">
+          Herramientas
+        </h2>
+      </div>
+
+      <div
+        class="project-detail__tags"
+        aria-label="Herramientas utilizadas"
+      >
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Requests</span>
+        <span>PyArrow</span>
         <span>Power BI</span>
         <span>Power Query</span>
         <span>DAX</span>
+        <span>GitHub</span>
         <span>Datos públicos</span>
       </div>
     </section>
 
-    <a class="project-detail__back" href="../../#portafolio">
+    <a
+      class="project-detail__back"
+      href="../../#portafolio"
+    >
       <i class="bi bi-arrow-left" aria-hidden="true"></i>
       Volver al portafolio
     </a>
