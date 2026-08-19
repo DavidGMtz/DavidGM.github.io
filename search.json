@@ -51,78 +51,8 @@
   {
     "objectID": "proyectos/vacantes/index.html",
     "href": "proyectos/vacantes/index.html",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
+    "title": "Proyecto: Cobertura y vacantes de plantilla",
     "section": "",
-    "text": "Ver dashboard en pantalla completa\nConsultar base en Google Sheets"
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#resumen-del-proyecto",
-    "href": "proyectos/vacantes/index.html#resumen-del-proyecto",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Resumen del proyecto",
-    "text": "Resumen del proyecto\n\n\n\n\n\n\n\nElemento\nDescripción\n\n\n\n\nUsuario principal\nDirección General / CEO\n\n\nNecesidad\nConocer en menos de dos minutos si la estructura opera con una cobertura adecuada y dónde existen faltantes críticos\n\n\nFuente de datos\nGoogle Sheets\n\n\nHerramienta de visualización\nLooker Studio\n\n\nEnfoque\nCobertura de plantilla, criticidad de vacantes, composición jerárquica y distribución territorial"
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#dashboard-interactivo",
-    "href": "proyectos/vacantes/index.html#dashboard-interactivo",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Dashboard interactivo",
-    "text": "Dashboard interactivo"
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#contexto-y-problema-de-negocio",
-    "href": "proyectos/vacantes/index.html#contexto-y-problema-de-negocio",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Contexto y problema de negocio",
-    "text": "Contexto y problema de negocio\nEmpresa Fantasma se encontraba en una fase de consolidación de su estructura organizacional. La Dirección General requería conocer el estado de la plantilla y la concentración de vacantes para tomar decisiones sobre reclutamiento, reasignación de personal y priorización de posiciones críticas.\nEl proposito es diseñar un dashboard ejecutivo que respondiera cuatro preguntas:\n\n¿Qué porcentaje de la estructura autorizada se encuentra cubierto?\n¿En qué áreas y ubicaciones se concentran las vacantes?\n¿Cuántas vacantes corresponden a posiciones críticas?\n¿Cómo se compone la fuerza laboral por nivel jerárquico?"
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#enfoque-analítico",
-    "href": "proyectos/vacantes/index.html#enfoque-analítico",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Enfoque analítico",
-    "text": "Enfoque analítico\nLa información de Google Sheets se organizó mediante una fuente de datos reutilizable en Looker Studio.\nA partir de los campos de posición, estado de cobertura, clasificación, área, ruta organizacional, puesto y ubicación, se definieron indicadores que separan el estado global de la plantilla de las necesidades específicas de cobertura.\nLos principales cálculos fueron:\n\n\n\n\n\n\n\nIndicador\nDefinición\n\n\n\n\nCobertura de la estructura\nPlazas cubiertas / plazas autorizadas\n\n\nTasa de vacancia\nPlazas vacantes / plazas autorizadas\n\n\nVacantes críticas\nPosiciones vacantes clasificadas en los niveles A y B\n\n\nComposición jerárquica\nDistribución de plazas cubiertas entre directivos, mandos medios y personal operativo\n\n\nConcentración por área y ubicación\nConteo de colaboradores o vacantes agrupado por unidad organizacional y zona geográfica\n\n\n\nEsta definición evitó interpretar todas las vacantes con el mismo nivel de urgencia y permitió vincular cada indicador con una decisión concreta."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#solución-desarrollada",
-    "href": "proyectos/vacantes/index.html#solución-desarrollada",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Solución desarrollada",
-    "text": "Solución desarrollada\nEl dashboard se estructuró en tres niveles de lectura.\n\n1. Estado ejecutivo\nLa parte superior concentra los indicadores indispensables para determinar el estado de la organización:\n\n87.9% de cobertura: 1,643 plazas cubiertas de 1,869 autorizadas.\n226 vacantes: equivalentes a una tasa de vacancia de 12.1%.\n11 vacantes críticas: cuatro de nivel A y siete de nivel B.\nÁrea cubierta con mayor concentración: Modelos de Desarrollo, con 634 colaboradores.\nComposición de la plantilla cubierta: 126 directivos, 331 mandos medios y 1,186 operativos.\n\n\n\n2. Diagnóstico de las brechas\nLa sección intermedia permite identificar dónde se concentra el problema:\n\nComparación de vacantes críticas A-B y operativas por área.\nMapa de concentración de plazas cubiertas.\nRanking de vacantes por ubicación.\nLectura narrativa de la composición laboral y la tasa de vacancia.\n\nLa mayor cantidad de vacantes se localiza en:\n\nCDMX: 69 vacantes.\nSinaloa: 52 vacantes.\nGuadalajara: 37 vacantes.\nPuebla: 29 vacantes.\n\nEsta vista permite orientar la revisión hacia las zonas con mayor volumen pendiente, sin perder la distinción entre cantidad y criticidad.\n\n\n3. Detalle operativo\nLa tabla inferior permite pasar del indicador agregado a la posición específica. Incluye:\n\nEstado de la vacante.\nClasificación de la posición.\nÁrea responsable.\nRuta organizacional.\nPuesto y ubicación.\nNúmero de plazas.\n\nDe esta manera, la Dirección puede detectar una brecha y posteriormente consultar cuáles son las posiciones que la explican."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#interactividad",
-    "href": "proyectos/vacantes/index.html#interactividad",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Interactividad",
-    "text": "Interactividad\nSe incorporaron controles por:\n\nTipo de nómina.\nÁrea.\nEstado.\nEstado de cobertura.\n\nTambién se agregó una opción para restablecer todos los filtros.\nLos controles actualizan de forma coordinada los KPI, gráficos, mapa y tabla, permitiendo analizar segmentos específicos sin crear reportes adicionales."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#decisiones-de-diseño",
-    "href": "proyectos/vacantes/index.html#decisiones-de-diseño",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Decisiones de diseño",
-    "text": "Decisiones de diseño\nLa propuesta utiliza azul marino, gris pizarra y fondos blancos para mantener contraste y sobriedad.\nLa jerarquía visual responde al tiempo limitado del usuario final:\n\nKPIs en la parte superior: ofrecen el diagnóstico inicial.\nComparaciones en la zona intermedia: explican dónde se concentra la brecha.\nDetalle en la parte inferior: permite validar posiciones concretas.\n\nTambién se redujo el número de colores y elementos decorativos. El azul oscuro identifica información prioritaria; los grises se utilizan como contexto y comparación.\nEsto evita que el formato compita con los datos."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#resultado",
-    "href": "proyectos/vacantes/index.html#resultado",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Resultado",
-    "text": "Resultado\nLa solución convierte una base de posiciones en una secuencia de decisión:\nEstado general de la estructura → concentración de brechas → ubicación del problema → posición que requiere atención.\nEl CEO puede determinar rápidamente que la organización presenta una cobertura de 87.9%, identificar 226 plazas pendientes y separar las 11 posiciones críticas del resto de las vacantes.\nEl dashboard no sustituye el proceso de priorización de Capital Humano, pero proporciona una base consistente para dirigirlo."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#alcance-y-siguientes-pasos",
-    "href": "proyectos/vacantes/index.html#alcance-y-siguientes-pasos",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Alcance y siguientes pasos",
-    "text": "Alcance y siguientes pasos\nEl análisis representa una fotografía de la estructura disponible en la fuente.\nPara evolucionarlo hacia una herramienta de seguimiento sería necesario incorporar información histórica y del proceso de reclutamiento. Esto permitiría medir:\n\nTendencias de cobertura.\nAntigüedad de las vacantes.\nTiempo promedio de contratación.\nCumplimiento de objetivos por área.\nEvolución de las vacantes críticas."
-  },
-  {
-    "objectID": "proyectos/vacantes/index.html#herramientas-utilizadas",
-    "href": "proyectos/vacantes/index.html#herramientas-utilizadas",
-    "title": "Cobertura y vacantes: caso de Business Intelligence en Looker Studio",
-    "section": "Herramientas utilizadas",
-    "text": "Herramientas utilizadas\n\nGoogle Sheets: almacenamiento y preparación de la base.\nLooker Studio: modelado de campos, métricas, filtros y visualización ejecutiva.\nCampos calculados: cobertura, vacancia, clasificación y composición de plantilla."
+    "text": "Caso de Business Intelligence\n      \n\n      \n        Descripción del proyecto\n      \n\n      \n        Dashboard ejecutivo desarrollado para analizar la cobertura de la\n        estructura organizacional, identificar vacantes críticas y conocer\n        la distribución de la plantilla por área, ubicación y nivel\n        jerárquico.\n      \n\n      \n        El proyecto parte de una base operativa almacenada en Google Sheets\n        y transforma los registros de plazas y colaboradores en indicadores\n        útiles para la toma de decisiones.\n      \n\n      \n        Este caso práctico forma parte de una prueba técnica basada en una\n        organización ficticia. Los nombres y datos utilizados tienen fines\n        exclusivamente demostrativos.\n      \n    \n\n    \n      \n      \n    \n\n    \n      \n        Consultar base de datos\n        \n      \n\n      \n        Abrir reporte en otra pestaña\n        \n      \n    \n\n    \n      \n        Diagnóstico\n      \n\n      \n        Contexto y problema de negocio\n      \n\n      \n        La Dirección General necesitaba conocer el estado de la plantilla\n        y la concentración de vacantes para tomar decisiones sobre\n        reclutamiento, reasignación de personal y cobertura de posiciones\n        críticas.\n      \n\n      \n        La visualización anterior se percibía como una acumulación de datos\n        y gráficos sin una jerarquía suficientemente clara. Esto dificultaba\n        identificar rápidamente si la estructura estaba operando con una\n        cobertura adecuada y dónde se encontraban los principales faltantes.\n      \n\n      \n        \n          ¿Cuál es el nivel general de cobertura?\n          \n            Mide qué porcentaje de la estructura autorizada se encuentra\n            ocupado.\n          \n        \n\n        \n          ¿Dónde se concentran las vacantes?\n          \n            Compara áreas y ubicaciones para detectar brechas de personal.\n          \n        \n\n        \n          ¿Cuáles vacantes son prioritarias?\n          \n            Separa las posiciones críticas de las vacantes operativas.\n          \n        \n\n        \n          ¿Cómo se compone la fuerza laboral?\n          \n            Analiza la distribución entre directivos, mandos medios y\n            personal operativo.\n          \n        \n      \n    \n\n    \n      \n        Alcance\n      \n\n      \n        Resumen del proyecto\n      \n\n      \n        \n\n\n\nElemento\nDescripción\n\n\n\n\nUsuario principal\nDirección General y CEO.\n\n\nNecesidad\nDeterminar en menos de dos minutos si la estructura opera con una cobertura adecuada y dónde existen faltantes críticos.\n\n\nFuente de datos\nGoogle Sheets.\n\n\nVisualización\nLooker Studio.\n\n\nEnfoque\nCobertura de plantilla, criticidad de vacantes, composición jerárquica y distribución territorial.\n\n\n\n\n      \n    \n\n    \n      \n        Modelado\n      \n\n      \n        Enfoque analítico\n      \n\n      \n        La información de Google Sheets se conectó mediante una fuente de\n        datos reutilizable en Looker Studio. A partir de los campos de\n        posición, cobertura, clasificación, área, ruta organizacional,\n        puesto y ubicación, se construyeron indicadores para separar el\n        estado global de la plantilla de las necesidades específicas de\n        contratación.\n      \n\n      \n        \n\n\n\nIndicador\nDefinición\n\n\n\n\nCobertura de la estructura\nPlazas cubiertas entre plazas autorizadas.\n\n\nTasa de vacancia\nPlazas vacantes entre plazas autorizadas.\n\n\nVacantes críticas\nPosiciones vacantes clasificadas dentro de los niveles prioritarios A y B.\n\n\nComposición jerárquica\nDistribución de plazas cubiertas entre directivos, mandos medios y personal operativo.\n\n\nConcentración organizacional\nConteo de colaboradores y vacantes agrupado por área y ubicación.\n\n\n\n\n      \n\n      \n        Esta definición evita interpretar todas las vacantes con el mismo\n        nivel de urgencia y vincula cada indicador con una decisión concreta.\n      \n    \n\n    \n      \n        Arquitectura de información\n      \n\n      \n        Solución desarrollada\n      \n\n      \n        El dashboard se estructuró en tres niveles de lectura para permitir\n        que el usuario pase del diagnóstico general al detalle de cada\n        posición.\n      \n\n      \n        \n          1. Estado ejecutivo\n          \n            Los principales indicadores de cobertura, vacancia y criticidad\n            aparecen en la parte superior.\n          \n        \n\n        \n          2. Diagnóstico de brechas\n          \n            Los gráficos intermedios muestran las áreas y ubicaciones donde\n            se concentra el problema.\n          \n        \n\n        \n          3. Detalle operativo\n          \n            La tabla inferior permite consultar las posiciones específicas\n            que explican cada indicador.\n          \n        \n\n        \n          4. Navegación interactiva\n          \n            Los filtros permiten segmentar la información por área,\n            ubicación y características de la posición.\n          \n        \n      \n    \n\n    \n      \n        Experiencia de usuario\n      \n\n      \n        Decisiones de diseño\n      \n\n      \n        La propuesta utiliza azul marino, gris pizarra y fondos blancos para\n        mantener una apariencia corporativa, mejorar el contraste y facilitar\n        la lectura prolongada.\n      \n\n      \n        La jerarquía visual responde al tiempo limitado del usuario final:\n        los KPIs ofrecen el diagnóstico inicial, las comparaciones explican\n        dónde se concentra la brecha y la tabla permite validar las posiciones\n        específicas.\n      \n\n      \n        También se redujo el número de colores y elementos decorativos.\n        El azul oscuro identifica información prioritaria, mientras que los\n        grises se utilizan como contexto y comparación. Esto evita que el\n        formato compita con los datos.\n      \n    \n\n    \n      \n        Resultado\n      \n\n      \n        Una lectura ejecutiva de la plantilla\n      \n\n      \n        El dashboard permite determinar rápidamente que la organización\n        presenta una cobertura de 87.9%, identificar 226 plazas pendientes\n        y separar las 11 posiciones críticas del resto de las vacantes.\n      \n\n      \n        La solución permite pasar del panorama general al detalle operativo,\n        evitando que todas las vacantes sean interpretadas con la misma\n        prioridad.\n      \n    \n\n    \n      \n        \n          Tecnologías\n        \n\n        \n          Herramientas\n        \n      \n\n      \n        Looker Studio\n        Google Sheets\n        Campos calculados\n        Filtros interactivos\n        Business Intelligence\n      \n    \n\n    \n      \n      Volver al portafolio"
   }
 ]
