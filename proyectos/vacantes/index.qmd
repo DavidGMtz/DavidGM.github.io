@@ -1,207 +1,430 @@
 ---
-title: "Cobertura y vacantes: caso de Business Intelligence en Looker Studio"
-description: "Caso de Business Intelligence para medir cobertura, vacancia y posiciones prioritarias."
+title: "Proyecto: Cobertura y vacantes de plantilla"
+subtitle: "Reporte interactivo desarrollado en Looker Studio"
+description: "Dashboard ejecutivo para medir cobertura, vacancia y posiciones prioritarias."
 date: 2025-12-01
 date-format: "YYYY"
-categories: [Looker Studio, Capital humano, Indicadores]
+categories: [Looker Studio, Capital humano, Indicadores, Google Sheets]
 image: ../../assets/img/vacantes.svg
-page-layout: article
-toc: true
-toc-title: "Contenido"
+page-layout: full
+toc: false
+title-block-banner: "#003366"
+title-block-banner-color: "#ffffff"
+title-block-categories: false
+format:
+  html:
+    body-classes: "pef-project-page vacantes-project-page"
 ---
 
-<style>
-.dashboard-container {
-  position: relative;
-  width: 100%;
-  height: min(80vh, 900px);
-  min-height: 650px;
-  overflow: hidden;
-  border: 1px solid #d9e0ea;
-  border-radius: 12px;
-  background: #f5f7fa;
-  box-shadow: 0 8px 24px rgba(15, 35, 70, 0.08);
-}
+```{=html}
+<div class="project-detail">
+  <div class="project-detail__container">
 
-.dashboard-container iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+    <section
+      class="project-detail__card"
+      aria-labelledby="descripcion-proyecto"
+    >
+      <p class="project-detail__eyebrow">
+        Caso de Business Intelligence
+      </p>
 
-@media (max-width: 768px) {
-  .dashboard-container {
-    height: 70vh;
-    min-height: 500px;
-    border-radius: 8px;
-  }
-}
-</style>
+      <h2 id="descripcion-proyecto">
+        Descripción del proyecto
+      </h2>
 
-::: {.d-flex .gap-2 .flex-wrap .mb-4}
-[Ver dashboard en pantalla completa](https://datastudio.google.com/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974){.btn .btn-primary target="_blank" rel="noopener"}
+      <p>
+        Dashboard ejecutivo desarrollado para analizar la cobertura de la
+        estructura organizacional, identificar vacantes críticas y conocer
+        la distribución de la plantilla por área, ubicación y nivel
+        jerárquico.
+      </p>
 
-[Consultar base en Google Sheets](https://docs.google.com/spreadsheets/d/1mjWQ99Oa--_sCNHzZgePf7TCE1JMvpTF4SafJvT7siE/edit?usp=sharing){.btn .btn-outline-primary target="_blank" rel="noopener"}
-:::
+      <p>
+        El proyecto parte de una base operativa almacenada en Google Sheets
+        y transforma los registros de plazas y colaboradores en indicadores
+        útiles para la toma de decisiones.
+      </p>
 
-::: {.callout-note appearance="simple"}
-Este caso practico forma parte de una prueba tecnica referente a una organización ficticia. El objetivo fue transformar una base operativa de estructura organizacional en una herramienta ejecutiva para evaluar cobertura, vacancia y posiciones críticas.
-:::
+      <p>
+        Este caso práctico forma parte de una prueba técnica basada en una
+        organización ficticia. Los nombres y datos utilizados tienen fines
+        exclusivamente demostrativos.
+      </p>
+    </section>
 
-## Resumen del proyecto
+    <section
+      class="project-detail__report"
+      aria-label="Dashboard interactivo de cobertura y vacantes"
+    >
+      <iframe
+        title="Dashboard de cobertura y vacantes"
+        src="https://datastudio.google.com/embed/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974/page/z2w4F"
+        loading="lazy"
+        allowfullscreen
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox">
+      </iframe>
+    </section>
 
-| Elemento | Descripción |
-|---|---|
-| Usuario principal | Dirección General / CEO |
-| Necesidad | Conocer en menos de dos minutos si la estructura opera con una cobertura adecuada y dónde existen faltantes críticos |
-| Fuente de datos | Google Sheets |
-| Herramienta de visualización | Looker Studio |
-| Enfoque | Cobertura de plantilla, criticidad de vacantes, composición jerárquica y distribución territorial |
+    <div
+      class="project-detail__actions"
+      style="gap: 0.8rem; flex-wrap: wrap;"
+    >
+      <a
+        class="button-outline"
+        href="https://docs.google.com/spreadsheets/d/1mjWQ99Oa--_sCNHzZgePf7TCE1JMvpTF4SafJvT7siE/edit?usp=sharing"
+        target="_blank"
+        rel="noopener"
+      >
+        Consultar base de datos
+        <i class="bi bi-file-earmark-spreadsheet" aria-hidden="true"></i>
+      </a>
 
-## Dashboard interactivo
+      <a
+        class="button-dark"
+        href="https://datastudio.google.com/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974"
+        target="_blank"
+        rel="noopener"
+      >
+        Abrir reporte en otra pestaña
+        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </div>
 
-::: {.column-page}
+    <section
+      class="project-detail__insights"
+      aria-labelledby="problema-negocio"
+    >
+      <p class="project-detail__eyebrow">
+        Diagnóstico
+      </p>
 
-<div class="dashboard-container">
+      <h2 id="problema-negocio">
+        Contexto y problema de negocio
+      </h2>
 
-<iframe
-  src="https://datastudio.google.com/embed/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974/page/z2w4F"
-  frameborder="0"
-  style="border:0"
-  allowfullscreen
-  sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-forms allow-popups">
-</iframe>
+      <p class="project-detail__intro">
+        La Dirección General necesitaba conocer el estado de la plantilla
+        y la concentración de vacantes para tomar decisiones sobre
+        reclutamiento, reasignación de personal y cobertura de posiciones
+        críticas.
+      </p>
 
+      <p>
+        La visualización anterior se percibía como una acumulación de datos
+        y gráficos sin una jerarquía suficientemente clara. Esto dificultaba
+        identificar rápidamente si la estructura estaba operando con una
+        cobertura adecuada y dónde se encontraban los principales faltantes.
+      </p>
+
+      <ul class="project-detail__questions">
+        <li>
+          <strong>¿Cuál es el nivel general de cobertura?</strong>
+          <span>
+            Mide qué porcentaje de la estructura autorizada se encuentra
+            ocupado.
+          </span>
+        </li>
+
+        <li>
+          <strong>¿Dónde se concentran las vacantes?</strong>
+          <span>
+            Compara áreas y ubicaciones para detectar brechas de personal.
+          </span>
+        </li>
+
+        <li>
+          <strong>¿Cuáles vacantes son prioritarias?</strong>
+          <span>
+            Separa las posiciones críticas de las vacantes operativas.
+          </span>
+        </li>
+
+        <li>
+          <strong>¿Cómo se compone la fuerza laboral?</strong>
+          <span>
+            Analiza la distribución entre directivos, mandos medios y
+            personal operativo.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="project-detail__card"
+      aria-labelledby="resumen-proyecto"
+    >
+      <p class="project-detail__eyebrow">
+        Alcance
+      </p>
+
+      <h2 id="resumen-proyecto">
+        Resumen del proyecto
+      </h2>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Elemento</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><strong>Usuario principal</strong></td>
+              <td>Dirección General y CEO.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Necesidad</strong></td>
+              <td>
+                Determinar en menos de dos minutos si la estructura opera
+                con una cobertura adecuada y dónde existen faltantes críticos.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>Fuente de datos</strong></td>
+              <td>Google Sheets.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Visualización</strong></td>
+              <td>Looker Studio.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Enfoque</strong></td>
+              <td>
+                Cobertura de plantilla, criticidad de vacantes, composición
+                jerárquica y distribución territorial.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section
+      class="project-detail__card"
+      aria-labelledby="enfoque-analitico"
+    >
+      <p class="project-detail__eyebrow">
+        Modelado
+      </p>
+
+      <h2 id="enfoque-analitico">
+        Enfoque analítico
+      </h2>
+
+      <p>
+        La información de Google Sheets se conectó mediante una fuente de
+        datos reutilizable en Looker Studio. A partir de los campos de
+        posición, cobertura, clasificación, área, ruta organizacional,
+        puesto y ubicación, se construyeron indicadores para separar el
+        estado global de la plantilla de las necesidades específicas de
+        contratación.
+      </p>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Indicador</th>
+              <th>Definición</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><strong>Cobertura de la estructura</strong></td>
+              <td>Plazas cubiertas entre plazas autorizadas.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Tasa de vacancia</strong></td>
+              <td>Plazas vacantes entre plazas autorizadas.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Vacantes críticas</strong></td>
+              <td>
+                Posiciones vacantes clasificadas dentro de los niveles
+                prioritarios A y B.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>Composición jerárquica</strong></td>
+              <td>
+                Distribución de plazas cubiertas entre directivos, mandos
+                medios y personal operativo.
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>Concentración organizacional</strong></td>
+              <td>
+                Conteo de colaboradores y vacantes agrupado por área y
+                ubicación.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Esta definición evita interpretar todas las vacantes con el mismo
+        nivel de urgencia y vincula cada indicador con una decisión concreta.
+      </p>
+    </section>
+
+    <section
+      class="project-detail__insights"
+      aria-labelledby="solucion-desarrollada"
+    >
+      <p class="project-detail__eyebrow">
+        Arquitectura de información
+      </p>
+
+      <h2 id="solucion-desarrollada">
+        Solución desarrollada
+      </h2>
+
+      <p class="project-detail__intro">
+        El dashboard se estructuró en tres niveles de lectura para permitir
+        que el usuario pase del diagnóstico general al detalle de cada
+        posición.
+      </p>
+
+      <ul class="project-detail__questions">
+        <li>
+          <strong>1. Estado ejecutivo</strong>
+          <span>
+            Los principales indicadores de cobertura, vacancia y criticidad
+            aparecen en la parte superior.
+          </span>
+        </li>
+
+        <li>
+          <strong>2. Diagnóstico de brechas</strong>
+          <span>
+            Los gráficos intermedios muestran las áreas y ubicaciones donde
+            se concentra el problema.
+          </span>
+        </li>
+
+        <li>
+          <strong>3. Detalle operativo</strong>
+          <span>
+            La tabla inferior permite consultar las posiciones específicas
+            que explican cada indicador.
+          </span>
+        </li>
+
+        <li>
+          <strong>4. Navegación interactiva</strong>
+          <span>
+            Los filtros permiten segmentar la información por área,
+            ubicación y características de la posición.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="project-detail__card"
+      aria-labelledby="decisiones-diseno"
+    >
+      <p class="project-detail__eyebrow">
+        Experiencia de usuario
+      </p>
+
+      <h2 id="decisiones-diseno">
+        Decisiones de diseño
+      </h2>
+
+      <p>
+        La propuesta utiliza azul marino, gris pizarra y fondos blancos para
+        mantener una apariencia corporativa, mejorar el contraste y facilitar
+        la lectura prolongada.
+      </p>
+
+      <p>
+        La jerarquía visual responde al tiempo limitado del usuario final:
+        los KPIs ofrecen el diagnóstico inicial, las comparaciones explican
+        dónde se concentra la brecha y la tabla permite validar las posiciones
+        específicas.
+      </p>
+
+      <p>
+        También se redujo el número de colores y elementos decorativos.
+        El azul oscuro identifica información prioritaria, mientras que los
+        grises se utilizan como contexto y comparación. Esto evita que el
+        formato compita con los datos.
+      </p>
+    </section>
+
+    <section
+      class="project-detail__insights"
+      aria-labelledby="resultado-proyecto"
+    >
+      <p class="project-detail__eyebrow">
+        Resultado
+      </p>
+
+      <h2 id="resultado-proyecto">
+        Una lectura ejecutiva de la plantilla
+      </h2>
+
+      <p class="project-detail__intro">
+        El dashboard permite determinar rápidamente que la organización
+        presenta una cobertura de 87.9%, identificar 226 plazas pendientes
+        y separar las 11 posiciones críticas del resto de las vacantes.
+      </p>
+
+      <p>
+        La solución permite pasar del panorama general al detalle operativo,
+        evitando que todas las vacantes sean interpretadas con la misma
+        prioridad.
+      </p>
+    </section>
+
+    <section
+      class="project-detail__tools"
+      aria-labelledby="herramientas-proyecto"
+    >
+      <div>
+        <p class="project-detail__eyebrow">
+          Tecnologías
+        </p>
+
+        <h2 id="herramientas-proyecto">
+          Herramientas
+        </h2>
+      </div>
+
+      <div
+        class="project-detail__tags"
+        aria-label="Herramientas utilizadas"
+      >
+        <span>Looker Studio</span>
+        <span>Google Sheets</span>
+        <span>Campos calculados</span>
+        <span>Filtros interactivos</span>
+        <span>Business Intelligence</span>
+      </div>
+    </section>
+
+    <a
+      class="project-detail__back"
+      href="../../#portafolio"
+    >
+      <i class="bi bi-arrow-left" aria-hidden="true"></i>
+      Volver al portafolio
+    </a>
+
+  </div>
 </div>
-
-:::
-
-## Contexto y problema de negocio
-
-Empresa Fantasma se encontraba en una fase de consolidación de su estructura organizacional. La Dirección General requería conocer el estado de la plantilla y la concentración de vacantes para tomar decisiones sobre reclutamiento, reasignación de personal y priorización de posiciones críticas.
-
-El proposito es diseñar un dashboard ejecutivo que respondiera cuatro preguntas:
-
-1. ¿Qué porcentaje de la estructura autorizada se encuentra cubierto?
-2. ¿En qué áreas y ubicaciones se concentran las vacantes?
-3. ¿Cuántas vacantes corresponden a posiciones críticas?
-4. ¿Cómo se compone la fuerza laboral por nivel jerárquico?
-
-## Enfoque analítico
-
-La información de Google Sheets se organizó mediante una fuente de datos reutilizable en Looker Studio.
-
-A partir de los campos de posición, estado de cobertura, clasificación, área, ruta organizacional, puesto y ubicación, se definieron indicadores que separan el estado global de la plantilla de las necesidades específicas de cobertura.
-
-Los principales cálculos fueron:
-
-| Indicador | Definición |
-|---|---|
-| Cobertura de la estructura | Plazas cubiertas / plazas autorizadas |
-| Tasa de vacancia | Plazas vacantes / plazas autorizadas |
-| Vacantes críticas | Posiciones vacantes clasificadas en los niveles A y B |
-| Composición jerárquica | Distribución de plazas cubiertas entre directivos, mandos medios y personal operativo |
-| Concentración por área y ubicación | Conteo de colaboradores o vacantes agrupado por unidad organizacional y zona geográfica |
-
-Esta definición evitó interpretar todas las vacantes con el mismo nivel de urgencia y permitió vincular cada indicador con una decisión concreta.
-
-## Solución desarrollada
-
-El dashboard se estructuró en tres niveles de lectura.
-
-### 1. Estado ejecutivo
-
-La parte superior concentra los indicadores indispensables para determinar el estado de la organización:
-
-- **87.9% de cobertura:** 1,643 plazas cubiertas de 1,869 autorizadas.
-- **226 vacantes:** equivalentes a una tasa de vacancia de 12.1%.
-- **11 vacantes críticas:** cuatro de nivel A y siete de nivel B.
-- **Área cubierta con mayor concentración:** Modelos de Desarrollo, con 634 colaboradores.
-- **Composición de la plantilla cubierta:** 126 directivos, 331 mandos medios y 1,186 operativos.
-
-### 2. Diagnóstico de las brechas
-
-La sección intermedia permite identificar dónde se concentra el problema:
-
-- Comparación de vacantes críticas A-B y operativas por área.
-- Mapa de concentración de plazas cubiertas.
-- Ranking de vacantes por ubicación.
-- Lectura narrativa de la composición laboral y la tasa de vacancia.
-
-La mayor cantidad de vacantes se localiza en:
-
-- **CDMX:** 69 vacantes.
-- **Sinaloa:** 52 vacantes.
-- **Guadalajara:** 37 vacantes.
-- **Puebla:** 29 vacantes.
-
-Esta vista permite orientar la revisión hacia las zonas con mayor volumen pendiente, sin perder la distinción entre cantidad y criticidad.
-
-### 3. Detalle operativo
-
-La tabla inferior permite pasar del indicador agregado a la posición específica. Incluye:
-
-- Estado de la vacante.
-- Clasificación de la posición.
-- Área responsable.
-- Ruta organizacional.
-- Puesto y ubicación.
-- Número de plazas.
-
-De esta manera, la Dirección puede detectar una brecha y posteriormente consultar cuáles son las posiciones que la explican.
-
-## Interactividad
-
-Se incorporaron controles por:
-
-- Tipo de nómina.
-- Área.
-- Estado.
-- Estado de cobertura.
-
-También se agregó una opción para restablecer todos los filtros.
-
-Los controles actualizan de forma coordinada los KPI, gráficos, mapa y tabla, permitiendo analizar segmentos específicos sin crear reportes adicionales.
-
-## Decisiones de diseño
-
-La propuesta utiliza azul marino, gris pizarra y fondos blancos para mantener contraste y sobriedad.
-
-La jerarquía visual responde al tiempo limitado del usuario final:
-
-1. **KPIs en la parte superior:** ofrecen el diagnóstico inicial.
-2. **Comparaciones en la zona intermedia:** explican dónde se concentra la brecha.
-3. **Detalle en la parte inferior:** permite validar posiciones concretas.
-
-También se redujo el número de colores y elementos decorativos. El azul oscuro identifica información prioritaria; los grises se utilizan como contexto y comparación.
-
-Esto evita que el formato compita con los datos.
-
-## Resultado
-
-La solución convierte una base de posiciones en una secuencia de decisión:
-
-**Estado general de la estructura → concentración de brechas → ubicación del problema → posición que requiere atención.**
-
-El CEO puede determinar rápidamente que la organización presenta una cobertura de 87.9%, identificar 226 plazas pendientes y separar las 11 posiciones críticas del resto de las vacantes.
-
-El dashboard no sustituye el proceso de priorización de Capital Humano, pero proporciona una base consistente para dirigirlo.
-
-## Alcance y siguientes pasos
-
-El análisis representa una fotografía de la estructura disponible en la fuente.
-
-Para evolucionarlo hacia una herramienta de seguimiento sería necesario incorporar información histórica y del proceso de reclutamiento. Esto permitiría medir:
-
-- Tendencias de cobertura.
-- Antigüedad de las vacantes.
-- Tiempo promedio de contratación.
-- Cumplimiento de objetivos por área.
-- Evolución de las vacantes críticas.
-
-## Herramientas utilizadas
-
-- **Google Sheets:** almacenamiento y preparación de la base.
-- **Looker Studio:** modelado de campos, métricas, filtros y visualización ejecutiva.
-- **Campos calculados:** cobertura, vacancia, clasificación y composición de plantilla.
+```
