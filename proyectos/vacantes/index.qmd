@@ -1,5 +1,5 @@
 ---
-title: "Analítica de cobertura y vacantes"
+title: "Cobertura y vacantes: caso de Business Intelligence en Looker Studio"
 description: "Caso de Business Intelligence para medir cobertura, vacancia y posiciones prioritarias."
 date: 2025-12-01
 date-format: "YYYY"
@@ -7,27 +7,201 @@ categories: [Looker Studio, Capital humano, Indicadores]
 image: ../../assets/img/vacantes.svg
 page-layout: article
 toc: true
+toc-title: "Contenido"
 ---
 
-## Problema
+<style>
+.dashboard-container {
+  position: relative;
+  width: 100%;
+  height: min(80vh, 900px);
+  min-height: 650px;
+  overflow: hidden;
+  border: 1px solid #d9e0ea;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: 0 8px 24px rgba(15, 35, 70, 0.08);
+}
 
-Una lectura aislada del número de vacantes no permite saber dónde está el mayor riesgo operativo. El proyecto organiza la información para distinguir plazas cubiertas y vacantes, comparar áreas y localizar posiciones prioritarias.
+.dashboard-container iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
-## Preguntas que responde
+@media (max-width: 768px) {
+  .dashboard-container {
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 8px;
+  }
+}
+</style>
 
-- ¿Cuál es el nivel general de cobertura?
-- ¿En qué áreas se concentran las vacantes?
-- ¿Cómo se compone la fuerza laboral?
-- ¿Qué posiciones deberían atenderse primero?
+::: {.d-flex .gap-2 .flex-wrap .mb-4}
+[Ver dashboard en pantalla completa](https://datastudio.google.com/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974){.btn .btn-primary target="_blank" rel="noopener"}
+
+[Consultar base en Google Sheets](https://docs.google.com/spreadsheets/d/1mjWQ99Oa--_sCNHzZgePf7TCE1JMvpTF4SafJvT7siE/edit?usp=sharing){.btn .btn-outline-primary target="_blank" rel="noopener"}
+:::
+
+::: {.callout-note appearance="simple"}
+Este caso practico forma parte de una prueba tecnica referente a una organización ficticia. El objetivo fue transformar una base operativa de estructura organizacional en una herramienta ejecutiva para evaluar cobertura, vacancia y posiciones críticas.
+:::
+
+## Resumen del proyecto
+
+| Elemento | Descripción |
+|---|---|
+| Usuario principal | Dirección General / CEO |
+| Necesidad | Conocer en menos de dos minutos si la estructura opera con una cobertura adecuada y dónde existen faltantes críticos |
+| Fuente de datos | Google Sheets |
+| Herramienta de visualización | Looker Studio |
+| Enfoque | Cobertura de plantilla, criticidad de vacantes, composición jerárquica y distribución territorial |
+
+## Dashboard interactivo
+
+::: {.column-page}
+
+<div class="dashboard-container">
+
+<iframe
+  src="https://datastudio.google.com/embed/reporting/aaf0ae26-6364-428a-8333-9a3ac996c974/page/z2w4F"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen
+  sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-forms allow-popups">
+</iframe>
+
+</div>
+
+:::
+
+## Contexto y problema de negocio
+
+Empresa Fantasma se encontraba en una fase de consolidación de su estructura organizacional. La Dirección General requería conocer el estado de la plantilla y la concentración de vacantes para tomar decisiones sobre reclutamiento, reasignación de personal y priorización de posiciones críticas.
+
+El proposito es diseñar un dashboard ejecutivo que respondiera cuatro preguntas:
+
+1. ¿Qué porcentaje de la estructura autorizada se encuentra cubierto?
+2. ¿En qué áreas y ubicaciones se concentran las vacantes?
+3. ¿Cuántas vacantes corresponden a posiciones críticas?
+4. ¿Cómo se compone la fuerza laboral por nivel jerárquico?
+
+## Enfoque analítico
+
+La información de Google Sheets se organizó mediante una fuente de datos reutilizable en Looker Studio.
+
+A partir de los campos de posición, estado de cobertura, clasificación, área, ruta organizacional, puesto y ubicación, se definieron indicadores que separan el estado global de la plantilla de las necesidades específicas de cobertura.
+
+Los principales cálculos fueron:
+
+| Indicador | Definición |
+|---|---|
+| Cobertura de la estructura | Plazas cubiertas / plazas autorizadas |
+| Tasa de vacancia | Plazas vacantes / plazas autorizadas |
+| Vacantes críticas | Posiciones vacantes clasificadas en los niveles A y B |
+| Composición jerárquica | Distribución de plazas cubiertas entre directivos, mandos medios y personal operativo |
+| Concentración por área y ubicación | Conteo de colaboradores o vacantes agrupado por unidad organizacional y zona geográfica |
+
+Esta definición evitó interpretar todas las vacantes con el mismo nivel de urgencia y permitió vincular cada indicador con una decisión concreta.
 
 ## Solución desarrollada
 
-Se construyó un reporte analítico con indicadores de cobertura, vacantes y composición de plantilla; filtros por ubicación, contrato y área; y vistas de detalle para revisar posiciones cubiertas y pendientes.
+El dashboard se estructuró en tres niveles de lectura.
+
+### 1. Estado ejecutivo
+
+La parte superior concentra los indicadores indispensables para determinar el estado de la organización:
+
+- **87.9% de cobertura:** 1,643 plazas cubiertas de 1,869 autorizadas.
+- **226 vacantes:** equivalentes a una tasa de vacancia de 12.1%.
+- **11 vacantes críticas:** cuatro de nivel A y siete de nivel B.
+- **Área cubierta con mayor concentración:** Modelos de Desarrollo, con 634 colaboradores.
+- **Composición de la plantilla cubierta:** 126 directivos, 331 mandos medios y 1,186 operativos.
+
+### 2. Diagnóstico de las brechas
+
+La sección intermedia permite identificar dónde se concentra el problema:
+
+- Comparación de vacantes críticas A-B y operativas por área.
+- Mapa de concentración de plazas cubiertas.
+- Ranking de vacantes por ubicación.
+- Lectura narrativa de la composición laboral y la tasa de vacancia.
+
+La mayor cantidad de vacantes se localiza en:
+
+- **CDMX:** 69 vacantes.
+- **Sinaloa:** 52 vacantes.
+- **Guadalajara:** 37 vacantes.
+- **Puebla:** 29 vacantes.
+
+Esta vista permite orientar la revisión hacia las zonas con mayor volumen pendiente, sin perder la distinción entre cantidad y criticidad.
+
+### 3. Detalle operativo
+
+La tabla inferior permite pasar del indicador agregado a la posición específica. Incluye:
+
+- Estado de la vacante.
+- Clasificación de la posición.
+- Área responsable.
+- Ruta organizacional.
+- Puesto y ubicación.
+- Número de plazas.
+
+De esta manera, la Dirección puede detectar una brecha y posteriormente consultar cuáles son las posiciones que la explican.
+
+## Interactividad
+
+Se incorporaron controles por:
+
+- Tipo de nómina.
+- Área.
+- Estado.
+- Estado de cobertura.
+
+También se agregó una opción para restablecer todos los filtros.
+
+Los controles actualizan de forma coordinada los KPI, gráficos, mapa y tabla, permitiendo analizar segmentos específicos sin crear reportes adicionales.
+
+## Decisiones de diseño
+
+La propuesta utiliza azul marino, gris pizarra y fondos blancos para mantener contraste y sobriedad.
+
+La jerarquía visual responde al tiempo limitado del usuario final:
+
+1. **KPIs en la parte superior:** ofrecen el diagnóstico inicial.
+2. **Comparaciones en la zona intermedia:** explican dónde se concentra la brecha.
+3. **Detalle en la parte inferior:** permite validar posiciones concretas.
+
+También se redujo el número de colores y elementos decorativos. El azul oscuro identifica información prioritaria; los grises se utilizan como contexto y comparación.
+
+Esto evita que el formato compita con los datos.
 
 ## Resultado
 
-La solución ofrece una vista ejecutiva de la plantilla y permite pasar del panorama general al detalle de las posiciones, evitando interpretar todas las vacantes con la misma prioridad.
+La solución convierte una base de posiciones en una secuencia de decisión:
 
-::: {.callout-note}
-Cuando tengas la captura y el enlace público definitivos, colócalos en esta página para que el proyecto quede completo.
-:::
+**Estado general de la estructura → concentración de brechas → ubicación del problema → posición que requiere atención.**
+
+El CEO puede determinar rápidamente que la organización presenta una cobertura de 87.9%, identificar 226 plazas pendientes y separar las 11 posiciones críticas del resto de las vacantes.
+
+El dashboard no sustituye el proceso de priorización de Capital Humano, pero proporciona una base consistente para dirigirlo.
+
+## Alcance y siguientes pasos
+
+El análisis representa una fotografía de la estructura disponible en la fuente.
+
+Para evolucionarlo hacia una herramienta de seguimiento sería necesario incorporar información histórica y del proceso de reclutamiento. Esto permitiría medir:
+
+- Tendencias de cobertura.
+- Antigüedad de las vacantes.
+- Tiempo promedio de contratación.
+- Cumplimiento de objetivos por área.
+- Evolución de las vacantes críticas.
+
+## Herramientas utilizadas
+
+- **Google Sheets:** almacenamiento y preparación de la base.
+- **Looker Studio:** modelado de campos, métricas, filtros y visualización ejecutiva.
+- **Campos calculados:** cobertura, vacancia, clasificación y composición de plantilla.
